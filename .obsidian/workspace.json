@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4b5606d70a8ee3f9",
+            "id": "015a0773ce7cdffc",
             "type": "leaf",
             "state": {
-              "type": "style-settings",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Hello.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Hello.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Hello.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Hello.md"
+              }
             }
           }
         ]
@@ -150,7 +158,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4b5606d70a8ee3f9",
+  "active": "015a0773ce7cdffc",
   "lastOpenFiles": [
     "Hello.md",
     "Welcome.md"
