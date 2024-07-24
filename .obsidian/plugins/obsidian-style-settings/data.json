@@ -1,0 +1,22 @@
+{
+  "shiba-theme-settings@@shiba-colors-theme-dark": "Lilac-dark",
+  "shiba-theme-settings@@shiba-accent-style": true,
+  "shiba-theme-settings@@shiba-accent-colors": "accent-rose",
+  "shimmering-focus@@hide-vault-switcher-and-settings": false,
+  "shimmering-focus@@show-sidebar-header-buttons": true,
+  "shimmering-focus@@show-suggester-instructions": true,
+  "shimmering-focus@@show-tab-list-button": false,
+  "shimmering-focus@@show-new-tab-button": false,
+  "shimmering-focus@@show-close-buttons": true,
+  "shimmering-focus@@hide-electron-window-tweaker-status-bar": false,
+  "shimmering-focus@@hide-signature-icon": true,
+  "shimmering-focus@@hide-backlinks-status-bar": true,
+  "shimmering-focus@@hide-properties-in-statusbar": false,
+  "shimmering-focus@@hide-pane-relief-focus-lock-status-bar": false,
+  "shimmering-focus@@hide-languagetool-status-bar": false,
+  "shimmering-focus@@use-relative-line-numbers": true,
+  "id@@kanban-variant": "kanban-full",
+  "id@@headers-one-color": false,
+  "id@@colorblind_protan-deutan": false,
+  "id@@colorblind_tritan": false
+}
