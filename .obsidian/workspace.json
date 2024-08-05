@@ -14,18 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "College/EMFT/Electrostatics.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "84ab97a512f9d2ac",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-08-05 20.29.47.excalidraw.md"
               }
             }
           }
@@ -89,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e799fa0ed78ba453",
@@ -180,9 +169,15 @@
   },
   "active": "fac19220b5156664",
   "lastOpenFiles": [
-    "College/Assets/Superposition.png",
+    "Own/HLS/HLS.md",
+    "Own/HLS/Modulator design.md",
+    "Own/Scripting/Notes.md",
+    "Own/Openlane/Intro.md",
+    "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
     "College/EMFT/Electrostatics.md",
+    "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ).pdf",
     "Excalidraw/Drawing 2024-08-05 20.29.47.excalidraw.md",
+    "College/Assets/Superposition.png",
     "College/EMFT/Intro.md",
     "College/Assets/Coulumb's law.png",
     "College/Assets",
@@ -198,11 +193,7 @@
     "College/RISCV/LFD115x.md",
     "COD",
     "Own/HLS/hls_bluebook_uv.pdf",
-    "College/RISCV/(RISC-V Edition) Digital Design and Computer Architecture -- Sarah Harris, David Harris.pdf",
     "College/RISCV/Resources.md",
-    "Own/HLS/HLS.md",
-    "Own/HLS/Modulator design.md",
-    "College/RISCV",
     "Hello.md",
     "Welcome.md"
   ]
