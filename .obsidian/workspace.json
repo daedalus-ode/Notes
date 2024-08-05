@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7cb4e8292d2538e7",
+            "id": "3ed7f04cf3534727",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RISCV/LFD115x.md",
+                "file": "COD/Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "4ffe1e4e947d86fa",
+            "id": "3412a8cef20922b5",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RISCV/LFD115x.md",
+                "file": "COD/Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RISCV/LFD115x.md",
+                "file": "COD/Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RISCV/LFD115x.md"
+                "file": "COD/Intro.md"
               }
             }
           }
@@ -168,11 +168,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "27661df59cd2d7df",
+  "active": "3ed7f04cf3534727",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-08-05 14.11.14.excalidraw.md",
+    "COD/Intro.md",
+    "Instructions (ISAs).md",
+    "Excalidraw",
+    "RISCV/LFD115x.md",
+    "COD",
     "HLS/hls_bluebook_uv.pdf",
     "RISCV/(RISC-V Edition) Digital Design and Computer Architecture -- Sarah Harris, David Harris.pdf",
-    "RISCV/LFD115x.md",
     "RISCV/Resources.md",
     "HLS/HLS.md",
     "HLS/Modulator design.md",
