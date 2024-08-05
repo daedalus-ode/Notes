@@ -7,14 +7,6 @@
       "key": "Q"
     }
   ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "graph:open": [],
   "app:delete-file": [
     {
@@ -56,6 +48,14 @@
         "Mod"
       ],
       "key": "Q"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
     }
   ]
 }

@@ -8,14 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3ed7f04cf3534727",
+            "id": "fac19220b5156664",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/Intro.md",
-                "mode": "source",
+                "file": "College/EMFT/Electrostatics.md",
+                "mode": "preview",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "84ab97a512f9d2ac",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-08-05 20.29.47.excalidraw.md"
               }
             }
           }
@@ -106,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/Intro.md",
+                "file": "College/EMFT/Electrostatics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/Intro.md",
+                "file": "College/EMFT/Electrostatics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/Intro.md"
+                "file": "College/EMFT/Electrostatics.md"
               }
             }
           }
@@ -168,23 +178,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3ed7f04cf3534727",
+  "active": "fac19220b5156664",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-08-05 14.11.14.excalidraw.md",
-    "COD/Intro.md",
-    "Instructions (ISAs).md",
+    "College/Assets/Superposition.png",
+    "College/EMFT/Electrostatics.md",
+    "Excalidraw/Drawing 2024-08-05 20.29.47.excalidraw.md",
+    "College/EMFT/Intro.md",
+    "College/Assets/Coulumb's law.png",
+    "College/Assets",
     "Excalidraw",
-    "RISCV/LFD115x.md",
+    "Electrostatics.md~",
+    "README.md",
+    "College/RISCV/Intro.md",
+    "Own",
+    "College",
+    "College/EMFT",
+    "Excalidraw/Drawing 2024-08-05 14.11.14.excalidraw.md",
+    "College/RISCV/Instructions (ISAs).md",
+    "College/RISCV/LFD115x.md",
     "COD",
-    "HLS/hls_bluebook_uv.pdf",
-    "RISCV/(RISC-V Edition) Digital Design and Computer Architecture -- Sarah Harris, David Harris.pdf",
-    "RISCV/Resources.md",
-    "HLS/HLS.md",
-    "HLS/Modulator design.md",
-    "RISCV",
-    "Openlane",
-    "Scripting",
-    "HLS",
+    "Own/HLS/hls_bluebook_uv.pdf",
+    "College/RISCV/(RISC-V Edition) Digital Design and Computer Architecture -- Sarah Harris, David Harris.pdf",
+    "College/RISCV/Resources.md",
+    "Own/HLS/HLS.md",
+    "Own/HLS/Modulator design.md",
+    "College/RISCV",
     "Hello.md",
     "Welcome.md"
   ]
