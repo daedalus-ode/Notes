@@ -35,3 +35,4 @@ $$\overline{F} = \frac{1}{4\pi\epsilon_o} (
 \frac{QQ_1 (\overline{r} - \overline{r_1})}{|\overline{r} - \overline{r_1}|^3} + 
 \frac{QQ_2 (\overline{r} - \overline{r_2})}{|\overline{r} - \overline{r_1}|^3} + 
 \frac{QQ_2 (\overline{r} - \overline{r_3})}{|\overline{r} - \overline{r_1}|^3} + \cdots)$$
+

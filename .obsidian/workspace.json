@@ -4,11 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a808b8c52ccd1555",
+        "id": "1be38026b73c5b27",
         "type": "tabs",
         "children": [
           {
-            "id": "fac19220b5156664",
+            "id": "d370db83bca9bb3b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "College/Assets/Spherical Coord. Sys..png"
+              }
+            }
+          },
+          {
+            "id": "eec8ac5f8b94276d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +28,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e6b27b019ae6bad4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "College/EMFT/Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -66,7 +89,7 @@
             }
           },
           {
-            "id": "3412a8cef20922b5",
+            "id": "fcbaaa905f029722",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -79,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e799fa0ed78ba453",
@@ -105,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/EMFT/Electrostatics.md",
+                "file": "College/EMFT/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/EMFT/Electrostatics.md",
+                "file": "College/EMFT/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/EMFT/Electrostatics.md"
+                "file": "College/EMFT/Notes.md"
               }
             }
           }
@@ -167,14 +191,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fac19220b5156664",
+  "active": "e6b27b019ae6bad4",
   "lastOpenFiles": [
+    "College/EMFT/Electrostatics.md",
+    "College/Assets/Spherical Coord. Sys..png",
+    "College/EMFT/Notes.md",
+    "College/Assets/Cyndrical Coord. sys..png",
+    "College/RISCV/Intro.md",
+    "College/RISCV/Instructions (ISAs).md",
+    "README.md",
     "Own/HLS/HLS.md",
     "Own/HLS/Modulator design.md",
     "Own/Scripting/Notes.md",
     "Own/Openlane/Intro.md",
     "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
-    "College/EMFT/Electrostatics.md",
     "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ).pdf",
     "Excalidraw/Drawing 2024-08-05 20.29.47.excalidraw.md",
     "College/Assets/Superposition.png",
@@ -183,13 +213,10 @@
     "College/Assets",
     "Excalidraw",
     "Electrostatics.md~",
-    "README.md",
-    "College/RISCV/Intro.md",
     "Own",
     "College",
     "College/EMFT",
     "Excalidraw/Drawing 2024-08-05 14.11.14.excalidraw.md",
-    "College/RISCV/Instructions (ISAs).md",
     "College/RISCV/LFD115x.md",
     "COD",
     "Own/HLS/hls_bluebook_uv.pdf",
