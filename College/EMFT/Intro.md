@@ -1,5 +1,5 @@
 # Units
-- [[Electrostatics]]
+- [Electrostatics](./Electrostatics)
 - Electric fields and dielectrics
 - Magnetostatics
 
@@ -7,3 +7,5 @@
 - Fundamentals of Electromagnetism by Sadiku and Kulkarni
 - Reference book
 	- Engineering Electromagnetism by Hayt & Bick
+
+[Personal notes](./Notes.md)
