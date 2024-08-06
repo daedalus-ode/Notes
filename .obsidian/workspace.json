@@ -11,7 +11,7 @@
             "id": "7ce97fa130008546",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -62,7 +62,7 @@
             }
           },
           {
-            "id": "78cdcec604818539",
+            "id": "303039e7c3a97457",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -161,6 +161,16 @@
   },
   "active": "7ce97fa130008546",
   "lastOpenFiles": [
+    "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
+    "Own/Scripting/Notes.md",
+    "Own/Openlane/Intro.md",
+    "Own/HLS/Modulator design.md",
+    "Own/HLS/hls_bluebook_uv.pdf",
+    "Own/HLS/HLS.md",
+    "Own/Scripting",
+    "Own/Openlane",
+    "Own/HLS",
+    "Own",
     "College/RISCV/Intro.md",
     "README.md",
     "College/RISCV/Resources.md",
@@ -187,18 +197,9 @@
     "College/Assets/Spherical Coord. Sys..png",
     "conflict-files-obsidian-git.md",
     "College/Assets/Cyndrical Coord. sys..png",
-    "Extra/HLS/Modulator design.md",
     "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
     "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ).pdf",
     "College/Assets/Superposition.png",
-    "College/Assets/Coulumb's law.png",
-    "College/Assets",
-    "Excalidraw",
-    "Electrostatics.md~",
-    "Extra",
-    "College",
-    "Excalidraw/Drawing 2024-08-05 14.11.14.excalidraw.md",
-    "Hello.md",
-    "Welcome.md"
+    "College/Assets/Coulumb's law.png"
   ]
 }
