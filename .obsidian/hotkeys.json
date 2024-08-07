@@ -7,14 +7,6 @@
       "key": "Q"
     }
   ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "G"
-    }
-  ],
   "obsidian-git:commit-amend-staged-specified-message": [
     {
       "modifiers": [
@@ -47,6 +39,22 @@
         "Mod"
       ],
       "key": "Q"
+    }
+  ],
+  "graph:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
+    }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Delete"
     }
   ]
 }
