@@ -64,4 +64,4 @@
 - Register that is used to determine the execution flow of the processor. This register holds the address of the code memory location in which the next instruction to be executed is stored.
 - It functions on the basis of offsets. So in a linear execution flow (i.e. without if statements and loops) after every execution of an instruction the register is updated to the next address by adding an offset (equal to the instruction bit size) to the current address. (This is in RISC architecture cos of the constant instruction size)
 - On reset PC always holds address of the 1st instruction of program.
-![RISCV Basic Architecture.png](<College/Assets/RISCV Basic Architecture.png>)
+![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
