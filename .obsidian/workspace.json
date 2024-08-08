@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7ce97fa130008546",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "College/EMFT/Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ff3997ddc3b99ac8",
             "type": "leaf",
             "state": {
@@ -28,6 +16,16 @@
                 "file": "College/RISCV/Instructions (ISAs).md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "aa5473c33d0f144f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/COD.md"
               }
             }
           }
@@ -117,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/EMFT/Notes.md",
+                "file": "College/RISCV/Instructions (ISAs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/EMFT/Notes.md",
+                "file": "College/RISCV/Instructions (ISAs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/EMFT/Notes.md"
+                "file": "College/RISCV/Instructions (ISAs).md"
               }
             }
           }
@@ -179,28 +177,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7ce97fa130008546",
+  "active": "ff3997ddc3b99ac8",
   "lastOpenFiles": [
+    "College/Assets/RISCV_Basic_Architecture.png",
+    "College/RISCV/Instructions (ISAs).md",
+    "Excalidraw/COD.md",
+    "College/EMFT/Notes.md",
     "College/EMFT/Electrostatics.md",
     "College/Assets/Spherical_Coord_Sys..png",
     "College/Assets/Cyndrical_Coord._sys..png",
     "College/EMFT/Intro.md",
     "College/Assets/Coulumbs_law.png",
-    "College/RISCV/Instructions (ISAs).md",
     "College/Assets/RISCV Basic Architecture.png",
-    "College/Assets/RISCV_Basic_Architecture.png",
     "Extra/Scripting/Notes.md",
     "Extra/Openlane/Intro.md",
     "Extra/HLS/HLS.md",
     "College/CCN/Intro.md",
-    "College/EMFT/Notes.md",
     "College/LIC/Intro.md",
     "College/LIC/Development of Ideal OpAmps.md",
     "College/RISCV/Intro.md",
     "README.md",
     "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
     "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf.md",
-    "Excalidraw/COD.md",
     "College/Verification",
     "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
     "Own/Scripting/Notes.md",
