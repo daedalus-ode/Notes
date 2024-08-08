@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/EMFT/Electrostatics.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/EMFT/Electrostatics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/EMFT/Electrostatics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md"
+                "file": "College/EMFT/Electrostatics.md"
               }
             }
           }
@@ -181,13 +181,16 @@
   },
   "active": "7ce97fa130008546",
   "lastOpenFiles": [
-    "College/Assets/RISCV_Basic_Architecture.png",
+    "College/EMFT/Intro.md",
+    "College/Assets/Coulumbs law.png",
+    "College/EMFT/Electrostatics.md",
     "College/RISCV/Instructions (ISAs).md",
+    "College/Assets/RISCV Basic Architecture.png",
+    "College/Assets/RISCV_Basic_Architecture.png",
     "Extra/Scripting/Notes.md",
     "Extra/Openlane/Intro.md",
     "Extra/HLS/HLS.md",
     "College/CCN/Intro.md",
-    "College/EMFT/Intro.md",
     "College/EMFT/Notes.md",
     "College/LIC/Intro.md",
     "College/LIC/Development of Ideal OpAmps.md",
@@ -195,7 +198,6 @@
     "README.md",
     "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
     "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf.md",
-    "College/EMFT/Electrostatics.md",
     "Excalidraw/COD.md",
     "College/Verification",
     "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
@@ -219,7 +221,6 @@
     "College/CCN",
     "College/Assets/Spherical Coord. Sys..png",
     "College/Assets/Cyndrical Coord. sys..png",
-    "College/Assets/Superposition.png",
-    "College/Assets/Coulumb's law.png"
+    "College/Assets/Superposition.png"
   ]
 }
