@@ -1,6 +1,6 @@
 # Computer organization and Design
 # Chapters
-1. [Instructions ISAs](<College/RISCV/Instructions (ISAs).md>)
+1. [Instructions ISAs](<./Instructions (ISAs).md>)
 2. Data flow model (micro-arch.)
 3. Arithmetic for computer
 4. Computer abstraction
@@ -14,5 +14,5 @@ Computer organization and Design - RISCV edition
 ## Assignment
 5 stage pipelined architecture
 
-[Resources](College/RISCV/Resources.md)
-[Linux Foundation Course Notes](<College/RISCV/LFD115x.md>)
+[Resources](./Resources.md)
+[Linux Foundation Course Notes](<./LFD115x.md>)

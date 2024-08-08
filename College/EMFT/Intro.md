@@ -1,5 +1,5 @@
 # Units
-- [Electrostatics](College/EMFT/Electrostatics.md)
+- [Electrostatics](./Electrostatics.md)
 - Electric fields and dielectrics
 - Magnetostatics
 
@@ -8,4 +8,4 @@
 - Reference book
 	- Engineering Electromagnetism by Hayt & Bick
 
-[Personal notes](College/EMFT/Notes.md)
+[Personal notes](./Notes.md)

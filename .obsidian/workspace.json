@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Extra/Scripting/Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,7 @@
             }
           },
           {
-            "id": "9eff4d115f2723cc",
+            "id": "dfe21b067392a7f0",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Extra/Scripting/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Extra/Scripting/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Extra/Scripting/Notes.md"
               }
             }
           }
@@ -181,18 +181,20 @@
   },
   "active": "7ce97fa130008546",
   "lastOpenFiles": [
-    "Extra/Scripting/Notes.md",
-    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
-    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf.md",
     "Extra/Openlane/Intro.md",
     "Extra/HLS/HLS.md",
     "College/CCN/Intro.md",
     "College/EMFT/Intro.md",
-    "College/EMFT/Electrostatics.md",
+    "College/EMFT/Notes.md",
     "College/LIC/Intro.md",
     "College/LIC/Development of Ideal OpAmps.md",
     "College/RISCV/Intro.md",
     "College/RISCV/Instructions (ISAs).md",
+    "README.md",
+    "Extra/Scripting/Notes.md",
+    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
+    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf.md",
+    "College/EMFT/Electrostatics.md",
     "College/Assets/RISCV Basic Architecture.png",
     "Excalidraw/COD.md",
     "College/Verification",
@@ -206,13 +208,11 @@
     "Own/Openlane",
     "Own/HLS",
     "Own",
-    "README.md",
     "College/RISCV/Resources.md",
     "College/RISCV/LFD115x.md",
     "Excalidraw/EMFT.md",
     "College/LIC/Active filter design.md",
     "College/CCN/gns3.md",
-    "College/EMFT/Notes.md",
     "College/LIC/Current feedback.md",
     "College/LIC/Continuation of U1.md",
     "College/LIC",

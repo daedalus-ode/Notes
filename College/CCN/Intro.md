@@ -1,2 +1,2 @@
-- [Wireshark](College/CCN/Wireshark.md)
-- [GNS3](College/CCN/gns3.md)
+- [Wireshark](./Wireshark.md)
+- [GNS3](./gns3.md)
