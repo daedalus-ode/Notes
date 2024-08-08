@@ -14,5 +14,6 @@ Computer organization and Design - RISCV edition
 ## Assignment
 5 stage pipelined architecture
 
-[Resources](./Resources.md)
-[Linux Foundation Course Notes](<./LFD115x.md>)
+# Links
+- [Resources](./Resources.md)
+- [Linux Foundation Course Notes](<./LFD115x.md>)
