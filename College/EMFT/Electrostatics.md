@@ -25,7 +25,7 @@ The law describes a relation of electromagnetic force with the following factors
 - Spherical
 	- System in which the points are represented with respect to the distance from the origin and the angles $\theta$ and $\phi$ 
 ## Coulombs (again but with vectors)
-![diagram](<../Assets/Coulumbs law.png>)
+![diagram](<../Assets/Coulumbs_law.png>)
 $$|\overline{F_{12}}| \Rightarrow \frac{Q_1Q_2}{4\pi\varepsilon_o|\overline{r_{12}}|^2} \  ; \  F_{12} = |\overline{F12}|\hat{r_{12}}$$
 $$\hat{r_{12}} = \frac{|r_{12}|}{|\overline{r_{12}}|}$$
 $$F_{12} = \frac{Q_1 Q_2 \  \overline{r_{12}}}{4\pi\varepsilon_o |r_{12}|^3}$$

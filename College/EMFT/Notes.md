@@ -14,7 +14,7 @@ From textbook
 - $\phi$ -> azimuthal angle of point measure from x-axis on xy-plane
 - $z$ -> distance of point from xy-plane
 - $x = \rho cos\theta \ ,\ y = \rho \sin\theta \ ,\ z=z$
-![image](<../Assets/Cyndrical Coord. sys..png>)
+![image](<../Assets/Cyndrical_Coord._sys..png>)
 
 ## Spherical
 - Denoted by $(r,\ \theta,\ \phi)$
@@ -22,4 +22,4 @@ From textbook
 - $\theta$ -> colatitude, angle between z-axis and position vector
 - $\phi$ -> azimuthal angle, measure between x axis and position vector
 - $x = rsin\theta cos\phi\ ,\ y = rsin\theta sin\phi\ ,\ z = rcos\theta$
-![image](<Spherical Coord. Sys..png>)
+![image](<../Assets/Spherical_Coord_Sys..png>)

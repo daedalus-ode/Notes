@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/EMFT/Electrostatics.md",
+                "file": "College/EMFT/Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/EMFT/Electrostatics.md",
+                "file": "College/EMFT/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/EMFT/Electrostatics.md",
+                "file": "College/EMFT/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/EMFT/Electrostatics.md"
+                "file": "College/EMFT/Notes.md"
               }
             }
           }
@@ -181,9 +181,11 @@
   },
   "active": "7ce97fa130008546",
   "lastOpenFiles": [
-    "College/EMFT/Intro.md",
-    "College/Assets/Coulumbs law.png",
     "College/EMFT/Electrostatics.md",
+    "College/Assets/Spherical_Coord_Sys..png",
+    "College/Assets/Cyndrical_Coord._sys..png",
+    "College/EMFT/Intro.md",
+    "College/Assets/Coulumbs_law.png",
     "College/RISCV/Instructions (ISAs).md",
     "College/Assets/RISCV Basic Architecture.png",
     "College/Assets/RISCV_Basic_Architecture.png",
@@ -219,8 +221,6 @@
     "College/LIC/Continuation of U1.md",
     "College/LIC",
     "College/CCN",
-    "College/Assets/Spherical Coord. Sys..png",
-    "College/Assets/Cyndrical Coord. sys..png",
     "College/Assets/Superposition.png"
   ]
 }
