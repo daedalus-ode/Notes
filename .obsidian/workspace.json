@@ -4,29 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "27d75336062efb21",
+        "id": "ccc5fa09f55cf1bd",
         "type": "tabs",
         "children": [
           {
-            "id": "ff3997ddc3b99ac8",
+            "id": "1b2db26fe2f71065",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa5473c33d0f144f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/COD.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -76,7 +62,7 @@
             }
           },
           {
-            "id": "65f1b58674982ceb",
+            "id": "e0426333f26e2f15",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -89,7 +75,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 313.5,
+    "collapsed": true
   },
   "right": {
     "id": "e799fa0ed78ba453",
@@ -115,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +118,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "College/RISCV/Instructions (ISAs).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -177,11 +160,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ff3997ddc3b99ac8",
+  "active": "1b2db26fe2f71065",
   "lastOpenFiles": [
-    "College/Assets/RISCV_Basic_Architecture.png",
-    "College/RISCV/Instructions (ISAs).md",
     "Excalidraw/COD.md",
+    "College/RISCV/Instructions (ISAs).md",
+    "College/Assets/RISCV_Basic_Architecture.png",
     "College/EMFT/Notes.md",
     "College/EMFT/Electrostatics.md",
     "College/Assets/Spherical_Coord_Sys..png",
