@@ -36,3 +36,7 @@ $$\overline{F} = \frac{1}{4\pi\epsilon_o} (
 \frac{QQ_2 (\overline{r} - \overline{r_2})}{|\overline{r} - \overline{r_1}|^3} + 
 \frac{QQ_2 (\overline{r} - \overline{r_3})}{|\overline{r} - \overline{r_1}|^3} + \cdots)$$
 
+## Electric Fields and Intensity
+- In the direction of the force applied
+- SI Unit :- $E = \frac{Volts}{meter}\ (or)\ \frac{V}{m}$
+- Formula :- $$E = \frac{\overline{F}}{q}\ =\ \frac{Q\hat{r}}{4\pi\varepsilon_o|r|^2}$$
