@@ -117,10 +117,32 @@
 	- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
 	- 
 
-
+## Registers
+- rs - source register
+- rd - destination register
+- ex. `add rd, rs1, rs2`
+## Structure
 ![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
 
 
+# Types of instructions
+- Example Code
+	-  R-type
+		```asm
+		lw x5, 0(x10)
+		lw x6, 4(x10)
+		add x7, x5, x6
+		sw x7, 8(x10)
+		```
+	- I-type
+		```asm
+		lw rs1, (x10)
+		addi rd rs1, imm12
+		lw rd imm12(rs1)
+		```
+
+>[!note]
+>We can call an instruction I-type is it has operands of rd, rs1 and immediate 12-bit number.
 # Data transfer instructions
 - byte, half word, word, double word
 - unsigned no.s/ signed no.s
@@ -130,9 +152,8 @@
 
 
 
-# Essential Operations
-- R-type Instructions
-- 
+# Types of RV32I
+- RV32 - M
 # Doubts
 - What is Wd and Ws in the diagram (input to register) 
 >WD - Data bus (Destination)
@@ -149,21 +170,5 @@
 	- Complexity
 		- RISC		
 		- CISC
-# Put somewhere
-- Example Code
-	-  R-type
-		```asm
-		lw x5, 0(x10)
-		lw x6, 4(x10)
-		add x7, x5, x6
-		sw x7, 8(x10)
-		```
-	- I-type
-		```asm
-		lw rs1, (x10)
-		addi rd rs1, imm12
-		lw rd imm12(rs1)
-		```
-- Immediate value is used as source 2 (`rs2`) operand 
 # External links
 - [Excalidraw](../../Excalidraw)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/RISCV/Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "3b053384695781c0",
+            "id": "f9a6cc0a157307aa",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/RISCV/Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md",
+                "file": "College/RISCV/Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/RISCV/Instructions (ISAs).md"
+                "file": "College/RISCV/Resources.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "1cc300c91264448b",
   "lastOpenFiles": [
+    "College/RISCV/Instructions (ISAs).md",
     "College/RISCV/Instructions (ISAs).md~"
   ]
 }
