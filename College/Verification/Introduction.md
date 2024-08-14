@@ -50,7 +50,13 @@
 - Size of arrays
 	- Dynamic
 		- Size of the array can be changed during runtime
+		- Resized during running
+			- Removing previous elements
+			- Retaining previous elements
 	- Static
 		- Size of the array cannot be changed during runtime
+	- Associative
+		- The index is given a data type
+		- Single dimensional
 > [!Note]
 > If we try to access an out of bounds value of an array, it will give the default value of 0 in system verilog.
