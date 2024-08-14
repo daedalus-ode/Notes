@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ccc5fa09f55cf1bd",
+        "id": "534bb0186336dadc",
         "type": "tabs",
         "children": [
           {
-            "id": "1b2db26fe2f71065",
+            "id": "2634d92b7e5768c2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -62,7 +62,7 @@
             }
           },
           {
-            "id": "e0426333f26e2f15",
+            "id": "ba5565e051bb08ea",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -160,10 +160,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1b2db26fe2f71065",
+  "active": "2634d92b7e5768c2",
   "lastOpenFiles": [
-    "Excalidraw/COD.md",
     "College/RISCV/Instructions (ISAs).md",
+    "Excalidraw/EMFT.md",
+    "Excalidraw/COD.md",
     "College/Assets/RISCV_Basic_Architecture.png",
     "College/EMFT/Notes.md",
     "College/EMFT/Electrostatics.md",
@@ -195,7 +196,6 @@
     "Own",
     "College/RISCV/Resources.md",
     "College/RISCV/LFD115x.md",
-    "Excalidraw/EMFT.md",
     "College/LIC/Active filter design.md",
     "College/CCN/gns3.md",
     "College/LIC/Current feedback.md",
