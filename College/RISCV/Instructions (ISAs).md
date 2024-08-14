@@ -85,3 +85,14 @@
 
 
 ![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
+
+
+# Data transfer instructions
+- byte, half word, word, double word
+- unsigned no.s/ signed no.s
+```
+-4 -> 
+```
+
+
+
