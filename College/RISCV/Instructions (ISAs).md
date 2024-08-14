@@ -1,13 +1,18 @@
+# Table of content
+- [Definitions](#definitions)
+- [CISC vs RISC](#cisc)
 # Definitions
 - ISA (Instruction Set Architecture)
 	- Dependent on hardware. Varies with system
-- RISC (Reduced Instruction Set Computer) ex - ARM
-- CISC (Complex Instruction Set Computer) ex - Intel, AMD
+	- RISC (Reduced Instruction Set Computer) ex - ARM
+	- CISC (Complex Instruction Set Computer) ex - Intel, AMD
 - Addressing mode
 	- Indirect addressing - when pointer is used to access the memory
 	- Direct addressing - Direct values are given
-- ALU - The arithmetic block used to perform operations. They are fed direct values after resolving the pointers
-- ==Throughput== - inversely proportional to the clock delay for an instruction. This value decrease as the complexity of each increases
+- Blocks
+	- ALU - The arithmetic block used to perform operations. They are fed direct values after resolving the pointers
+- Performance
+	- Throughput - inversely proportional to the clock delay for an instruction. This value decrease as the complexity of each increases
 - Data types
 	- double word - 64 bits (8 bytes)
 	- word - 32 bits (4 bytes)
@@ -15,9 +20,18 @@
 	- byte - 8 bits
 - Instructions
 	- `lw` - load word, is used to read memory from the data memory. It functions by adding an offset value to the address that is given as a parameter
-	- ex. `lw rd, imm(rs1)`
-		- Here, we offset the address in rs1 by `imm` value and access the memory from that address.
-		- So `lw rd, 2(rs1)` adds a memory offset of 2 to the address stored in rs1 and stores the value from the that location in the memory into the `rd` register.  
+		- ex. `lw rd, imm(rs1)`
+			- Here, we offset the address in rs1 by `imm` value and access the memory from that address.
+			- So `lw rd, 2(rs1)` adds a memory offset of 2 to the address stored in rs1 and stores the value from the that location in the memory into the `rd` register.  
+	- `sw` - store word, is used to store a value into the data memory location. It functions similar to `lw` except for storing into the memory instead of reading
+		- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
+- Types memory structure
+	- Byte addressable
+		- Addressed in terms of a single byte
+		- This format is used to support more data types
+	- Word addressable/ double word address
+		- Addressed in terms of a word (32 bits / 4 bytes)
+		- Not used often because it's inefficient for data types of smaller sizes
 
 # CISC vs RISC
 
@@ -56,8 +70,15 @@
 
 # Instruction Format
 - Fields
-	- Opcode: Determines the operation to be perform based on the instructions given in the code
-	- Operand: The data (or the pointer to the data) on which the operation is being performed on
+	- Opcode (7 bit): Determines the operation to be perform based on the instructions given in the code
+	- fun3 (10 bits), fun7 (10 bits): depicts the type and operation to be performed
+	- destination register: 
+		- register
+		- data memory
+	- source fields: 
+		- register
+		- data memory
+		- immediate value/ constant
 - Size
 	- CISC - The binary encoded instruction size is variable based on the instructions and addressing types. This is cause each instruction is complex and it would be inefficient to use same instruction size.
 	- RISC - The binary encoded instruction size is kept constant irrespective of the instructions. This is possible because the instructions on RISCV is simple (perform simple operations) and it supports limited number of addressing modes. (ex. RV32 uses 32 bits for each instruction) 
@@ -80,8 +101,21 @@
 	- In this type of instructions, only data from the registers are used for execution of instructions. 
 - I-Type (Immediate)
 	- In this type of instructions, data from the registers and immediate value from the code are send to the ALU for computation. 
+	- `imm` value can be any 12 bit number.
 > [!NOTE]
-> In an ALU the operand 1 is always from the register and operand 2 can be from a register or immediate values depending on I or R types instruction.
+> In an ALU the operand 1 (Op1) is always from the register and operand 2 (Op2) can be from a register or immediate values depending on I or R types instruction.
+
+> [!Note] 
+>When it come to ops like add IMM and R, the memory access stage is kept idle.
+- Load
+	- ex. `lw rd, imm12(rs1)` or `lw x5, 0x04(x10)`
+	- PC -> Code memory -> CU, Register, mux -> ALU -> MemRead=1, mux -> Result -> WD (Register) 
+	- 5 Stages
+		- 
+		- Write Back
+- Store
+	- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
+	- 
 
 
 ![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
@@ -96,3 +130,40 @@
 
 
 
+# Essential Operations
+- R-type Instructions
+- 
+# Doubts
+- What is Wd and Ws in the diagram (input to register) 
+>WD - Data bus (Destination)
+>WS - Address bus (Source)
+- Types of classification
+	- Order of storage
+		- Little Endian
+			- Least significant bit stored first
+		- Big Endian
+			- Most significant bit stored first
+	- Data Path
+		- Harvard
+		- Von Neumann
+	- Complexity
+		- RISC		
+		- CISC
+# Put somewhere
+- Example Code
+	-  R-type
+		```asm
+		lw x5, 0(x10)
+		lw x6, 4(x10)
+		add x7, x5, x6
+		sw x7, 8(x10)
+		```
+	- I-type
+		```asm
+		lw rs1, (x10)
+		addi rd rs1, imm12
+		lw rd imm12(rs1)
+		```
+- Immediate value is used as source 2 (`rs2`) operand 
+# External links
+- [Excalidraw](../../Excalidraw)

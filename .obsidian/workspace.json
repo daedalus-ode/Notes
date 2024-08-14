@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "0d1510ecc6bd8fe1",
+    "id": "7d1c039f45ad37ca",
     "type": "split",
     "children": [
       {
-        "id": "534bb0186336dadc",
+        "id": "a31697592e01ab07",
         "type": "tabs",
         "children": [
           {
-            "id": "2634d92b7e5768c2",
+            "id": "1cc300c91264448b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "994c184a5edc4405",
+    "id": "81c440eef786e639",
     "type": "split",
     "children": [
       {
-        "id": "d929989b2699c20b",
+        "id": "335f12e4043dd41c",
         "type": "tabs",
         "children": [
           {
-            "id": "27661df59cd2d7df",
+            "id": "3c0601f0b0429d2e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "ec9c0a7968a6ed50",
+            "id": "10b7c04e5b3efdf8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "b003a1d01377720f",
+            "id": "b92c50eea6d4df70",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "f6e74a7dc532892d",
+            "id": "6dad4b47b0d4b16a",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -79,29 +79,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "e799fa0ed78ba453",
+    "id": "09b4d8b81c093255",
     "type": "split",
     "children": [
       {
-        "id": "5f2cd622ede66a2c",
+        "id": "9fe0563172d994eb",
         "type": "tabs",
         "children": [
           {
-            "id": "ef2d24b328544ce1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
-            }
-          },
-          {
-            "id": "cd8e35d3720a5bff",
+            "id": "3077abd8f58fcf2a",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -118,7 +107,7 @@
             }
           },
           {
-            "id": "c3729a71941edf1b",
+            "id": "c4ef42e2ccd41903",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -130,7 +119,7 @@
             }
           },
           {
-            "id": "2aab066889882391",
+            "id": "18f3a0393ffe02d9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -141,7 +130,7 @@
             }
           },
           {
-            "id": "2e7ee547f2b39540",
+            "id": "b561f3101589bdb1",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -168,48 +157,8 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2634d92b7e5768c2",
+  "active": "1cc300c91264448b",
   "lastOpenFiles": [
-    "College/RISCV/Instructions (ISAs).md",
-    "Excalidraw/EMFT.md",
-    "Excalidraw/COD.md",
-    "College/Assets/RISCV_Basic_Architecture.png",
-    "College/EMFT/Notes.md",
-    "College/EMFT/Electrostatics.md",
-    "College/Assets/Spherical_Coord_Sys..png",
-    "College/Assets/Cyndrical_Coord._sys..png",
-    "College/EMFT/Intro.md",
-    "College/Assets/Coulumbs_law.png",
-    "College/Assets/RISCV Basic Architecture.png",
-    "Extra/Scripting/Notes.md",
-    "Extra/Openlane/Intro.md",
-    "Extra/HLS/HLS.md",
-    "College/CCN/Intro.md",
-    "College/LIC/Intro.md",
-    "College/LIC/Development of Ideal OpAmps.md",
-    "College/RISCV/Intro.md",
-    "README.md",
-    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
-    "Extra/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf.md",
-    "College/Verification",
-    "Own/Scripting/comp_Linux Command Line and Shell Scripting Bible, 3rd Edition ( PDFDrive ) 1.pdf",
-    "Own/Scripting/Notes.md",
-    "Own/Openlane/Intro.md",
-    "Own/HLS/Modulator design.md",
-    "Own/HLS/hls_bluebook_uv.pdf",
-    "Own/HLS/HLS.md",
-    "Own/Scripting",
-    "Own/Openlane",
-    "Own/HLS",
-    "Own",
-    "College/RISCV/Resources.md",
-    "College/RISCV/LFD115x.md",
-    "College/LIC/Active filter design.md",
-    "College/CCN/gns3.md",
-    "College/LIC/Current feedback.md",
-    "College/LIC/Continuation of U1.md",
-    "College/LIC",
-    "College/CCN",
-    "College/Assets/Superposition.png"
+    "College/RISCV/Instructions (ISAs).md~"
   ]
 }
