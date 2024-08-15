@@ -1,6 +1,14 @@
 # Table of content
 - [Definitions](#definitions)
+- [Computer Architecture](#computer-architecture)
 - [CISC vs RISC](#cisc)
+- [Addressing Modes](#addressing-modes)
+- [RISCV](#riscv)
+	- [Instruction Format](#instruction-format)
+	- [Basic Architecture](#basic-architecture)
+	- [Types of Instructions](#types-of-instructions)
+	- [Data Transfer Instructions](#data-transfer-instructions)
+- [External Links](#external-links)
 # Definitions
 - ISA (Instruction Set Architecture)
 	- Dependent on hardware. Varies with system
@@ -33,6 +41,19 @@
 		- Addressed in terms of a word (32 bits / 4 bytes)
 		- Not used often because it's inefficient for data types of smaller sizes
 
+# Computer Architecture
+- Types of classification
+	- Order of storage
+		- Little Endian
+			- Least significant bit stored first
+		- Big Endian
+			- Most significant bit stored first
+	- Data Path
+		- Harvard
+		- Von Neumann
+	- Complexity
+		- RISC		
+		- CISC
 # CISC vs RISC
 
 | Features                                     | CISC                                                                                                          | RISC                                                                                                            |
@@ -68,7 +89,8 @@
 >- `[x2]` is direct addressing as it need to extract the physical memory location from a register and decipher the physical address before the data can be accessed.
 >- `[1000H]` is not indirect addressing as it doesn't require an extra step to retrieve the physical memory address. This would come under direct addressing
 
-# Instruction Format
+# RISCV
+## Instruction Format
 - Fields
 	- Opcode (7 bit): Determines the operation to be perform based on the instructions given in the code
 	- fun3 (10 bits), fun7 (10 bits): depicts the type and operation to be performed
@@ -82,32 +104,37 @@
 - Size
 	- CISC - The binary encoded instruction size is variable based on the instructions and addressing types. This is cause each instruction is complex and it would be inefficient to use same instruction size.
 	- RISC - The binary encoded instruction size is kept constant irrespective of the instructions. This is possible because the instructions on RISCV is simple (perform simple operations) and it supports limited number of addressing modes. (ex. RV32 uses 32 bits for each instruction) 
-# Basic Architecture
-## Memory
+## Basic Architecture
+### Memory
 - Code memory
 	- Holds all the instructions from the code in binary format
 - Data memory
 	- This memory holds all the data used for the execution of the instructions
-## Program Counter
+### Program Counter
 - Register that is used to determine the execution flow of the processor. This register holds the address of the code memory location in which the next instruction to be executed is stored.
 - It functions on the basis of offsets. So in a linear execution flow (i.e. without if statements and loops) after every execution of an instruction the register is updated to the next address by adding an offset (equal to the instruction bit size) to the current address. (This is in RISC architecture cos of the constant instruction size)
 - On reset PC always holds address of the 1st instruction of program.
 
-## Datapath
+### Datapath
 - Collection of state elements, computation elements, and interconnections that together provide a part for flow and transformation of data in processor during execution.
+### Registers
+- rs - source register
+- rd - destination register
+- ex. `add rd, rs1, rs2`
+### Structure
+![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
 
+>[!Note]
+>WD - Data bus (Destination)
+>WS - Address bus (Source)
 ## Types of Instructions
 - R-Type (Register)
 	- In this type of instructions, only data from the registers are used for execution of instructions. 
 - I-Type (Immediate)
 	- In this type of instructions, data from the registers and immediate value from the code are send to the ALU for computation. 
 	- `imm` value can be any 12 bit number.
-> [!NOTE]
-> In an ALU the operand 1 (Op1) is always from the register and operand 2 (Op2) can be from a register or immediate values depending on I or R types instruction.
-
-> [!Note] 
->When it come to ops like add IMM and R, the memory access stage is kept idle.
 - Load
+#TODO
 	- ex. `lw rd, imm12(rs1)` or `lw x5, 0x04(x10)`
 	- PC -> Code memory -> CU, Register, mux -> ALU -> MemRead=1, mux -> Result -> WD (Register) 
 	- 5 Stages
@@ -116,59 +143,37 @@
 - Store
 	- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
 	- 
-
-## Registers
-- rs - source register
-- rd - destination register
-- ex. `add rd, rs1, rs2`
-## Structure
-![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
-
-
-# Types of instructions
 - Example Code
 	-  R-type
 		```asm
 		lw x5, 0(x10)
 		lw x6, 4(x10)
 		add x7, x5, x6
-		sw x7, 8(x10)
 		```
 	- I-type
 		```asm
 		lw rs1, (x10)
 		addi rd rs1, imm12
-		lw rd imm12(rs1)
+		lw rd, imm12(rs1)
 		```
 
->[!note]
->We can call an instruction I-type is it has operands of rd, rs1 and immediate 12-bit number.
-# Data transfer instructions
+> [!NOTE]
+> In an ALU the operand 1 (Op1) is always from the register and operand 2 (Op2) can be from a register or immediate values depending on I or R types instruction.
+
+> [!Note] 
+>When it come to ops like add IMM and R, the memory access stage is kept idle.
+
+>[!Summary]
+>*I-type*
+>- We can call an instruction I-type is it has operands of rd, rs1 and immediate 12-bit number. 
+>- The `sw` instruction is an I-type instruction because we use an offset along with the base address in the register to store the data 
+>
+>*R-type*
+>- We call an instruction R-type if it's operands are all registers and there is no immediate value involved
+>- Arithmetic instructions are R-type instructions because the data is always taken from registers only to be operated on.
+## Data transfer instructions
 - byte, half word, word, double word
 - unsigned no.s/ signed no.s
-```
--4 -> 
-```
-
-
-
-# Types of RV32I
-- RV32 - M
-# Doubts
-- What is Wd and Ws in the diagram (input to register) 
->WD - Data bus (Destination)
->WS - Address bus (Source)
-- Types of classification
-	- Order of storage
-		- Little Endian
-			- Least significant bit stored first
-		- Big Endian
-			- Most significant bit stored first
-	- Data Path
-		- Harvard
-		- Von Neumann
-	- Complexity
-		- RISC		
-		- CISC
 # External links
 - [Excalidraw](../../Excalidraw)
+- [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
