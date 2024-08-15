@@ -171,7 +171,7 @@
 >*R-type*
 >- We call an instruction R-type if it's operands are all registers and there is no immediate value involved
 >- Arithmetic instructions are R-type instructions because the data is always taken from registers only to be operated on.
-## Data transfer instructions
+## Data Types 
 - byte, half word, word, double word
 - unsigned no.s/ signed no.s
 # External links
