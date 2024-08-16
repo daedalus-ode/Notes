@@ -91,6 +91,10 @@
 
 # RISCV
 ## Instruction Format
+
+| 31-25    | 24-20 | 19-15 | 14-12 | 11-7 | 6-0    |
+| -------- | ----- | ----- | ----- | ---- | ------ |
+| Function | rs2   | rs1   | fun3  | rd   | opcode |
 - Fields
 	- Opcode (7 bit): Determines the operation to be perform based on the instructions given in the code
 	- fun3 (10 bits), fun7 (10 bits): depicts the type and operation to be performed
@@ -104,6 +108,17 @@
 - Size
 	- CISC - The binary encoded instruction size is variable based on the instructions and addressing types. This is cause each instruction is complex and it would be inefficient to use same instruction size.
 	- RISC - The binary encoded instruction size is kept constant irrespective of the instructions. This is possible because the instructions on RISCV is simple (perform simple operations) and it supports limited number of addressing modes. (ex. RV32 uses 32 bits for each instruction) 
+>[!Question]
+>- What will be the number of extra bits required to encode 128 registers instead of 32 registers in R-type instructions of RISCV ?
+>	- [ ] 38
+>	- [x] 6 
+>	- [ ] 8
+>	- [ ] 32
+>- What will be the encoding bits (number of instruction) bits required if the number of register are increase similar to previous question ?
+>	- [x] 38
+>	- [ ] 6
+>	- [ ] 8
+>	- [ ] 32
 ## Basic Architecture
 ### Memory
 - Code memory
@@ -118,9 +133,24 @@
 ### Datapath
 - Collection of state elements, computation elements, and interconnections that together provide a part for flow and transformation of data in processor during execution.
 ### Registers
+>[!Note]
+>All register names are named with x[number]
+>ex. x10 <=> 10th register
 - rs - source register
 - rd - destination register
-- ex. `add rd, rs1, rs2`
+	- ex. `add rd, rs1, rs2`
+- Types
+	- Zero register 
+		- Shorted to ground, user doesn't have any control of the this register. It will always store the value of 0.
+	- Save registers (`s0` - `s11`)
+		- Used to hold variables
+	- Temporary register (`t0` - `t6`)
+		- Used to hold intermediate values during a larger computation
+	- Function arguments / return values
+	- Pointers
+		- Used to point to a specific code memory. 
+		- For example after executing a sub-process, the global pointer stores the instruction the control has to come back to after computation
+		- ex. Stack, Global, Thread
 ### Structure
 ![RISCV_Basic_Architecture.png](<../Assets/RISCV_Basic_Architecture.png>)
 
@@ -128,21 +158,43 @@
 >WD - Data bus (Destination)
 >WS - Address bus (Source)
 ## Types of Instructions
+#TODO 
 - R-Type (Register)
 	- In this type of instructions, only data from the registers are used for execution of instructions. 
+	- Instructions
+		 - `add`
+		 - `sub`
+		 - `and`
+		 - `or`
+		 - `xor`
 - I-Type (Immediate)
 	- In this type of instructions, data from the registers and immediate value from the code are send to the ALU for computation. 
 	- `imm` value can be any 12 bit number.
-- Load
-#TODO
-	- ex. `lw rd, imm12(rs1)` or `lw x5, 0x04(x10)`
-	- PC -> Code memory -> CU, Register, mux -> ALU -> MemRead=1, mux -> Result -> WD (Register) 
-	- 5 Stages
-		- 
-		- Write Back
-- Store
+	- Instruction
+		- `addi`
+		- `andi`
+		- `xori`
+		- `ori`
+	- L-type (Load)
+		#TODO : What type of instruction it come under?
+		- ex. `lw rd, imm12(rs1)` or `lw x5, 0x04(x10)`
+		- PC -> Code memory -> CU, Register, mux -> ALU -> MemRead=1, mux -> Result -> WD (Register) 
+		- 5 Stages
+		- Instructions
+			- `lb`
+			- `lh`
+			- `lw`
+			- `lbu`
+			- `lhu`
+- U-type
+- S-type (Store)
 	- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
-	- 
+	- Instructions
+		- `sb`
+		- `sd`
+		- `sw`
+- B-type
+- J- type
 - Example Code
 	-  R-type
 		```asm
@@ -171,9 +223,20 @@
 >*R-type*
 >- We call an instruction R-type if it's operands are all registers and there is no immediate value involved
 >- Arithmetic instructions are R-type instructions because the data is always taken from registers only to be operated on.
+
+
 ## Data Types 
 - byte, half word, word, double word
 - unsigned no.s/ signed no.s
+## Design Principles
+- Simplicity favours regularity
+	- It's easier to replicate the same operation multiple time than to create a completely create a new one from scratch
+- Smaller is faster
+	- More number of register increases the clock cycle time because it takes electric signals longer to travel
+	- The number of bits it would take in instruction format to address a register.
+## Types of RV
+>[!Note]
+>RV32 and RV64 has 32 bit instruction size. The difference is the size of ALU and more instructions to deal with double words. like the `ldw` 
 # External links
 - [Excalidraw](../../Excalidraw)
-- [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
+- [Proje`ctF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
