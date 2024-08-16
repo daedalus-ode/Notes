@@ -60,3 +60,28 @@
 		- Single dimensional
 > [!Note]
 > If we try to access an out of bounds value of an array, it will give the default value of 0 in system verilog.
+
+# Queue
+- A dynamic ordered array of homogeneous elements 
+- syntax
+	```verilog
+	bit queue_1[$]; // queue of bits
+	int queue_2[$]; // queue of int
+	byte queue_3[$:255]; // bounded with 256 entries
+	string queue_4[$]; // queue of strings
+	```
+
+	```verilog
+	bit [31:0] q1[$]; // queue of 32 bit elements
+	bit [31:0] b1,b2;
+	
+	initial begin
+		q1.push_front(45);
+		q1.push_back(45);
+		q1.push_front(45);
+		q1.push_back(45);
+		
+		b1 = q1.pop_front();
+		b1 = q1.pop_back();
+	end
+	```
