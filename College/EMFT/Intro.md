@@ -8,4 +8,4 @@
 - Reference book
 	- Engineering Electromagnetism by Hayt & Bick
 
-[Personal notes](./Notes.md)
+[Personal notes](Coordinate%20System.md)

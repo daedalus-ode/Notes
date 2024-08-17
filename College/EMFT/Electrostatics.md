@@ -23,7 +23,10 @@ The law describes a relation of electromagnetic force with the following factors
 - Cylindrical
 	- A 2d circle extended along the center along the z axis to make it a 3d system
 - Spherical
-	- System in which the points are represented with respect to the distance from the origin and the angles $\theta$ and $\phi$ 
+	- System in which the points are represented with respect to the distance 
+	- from the origin and the angles $\theta$ and $\phi$ 
+>[!Extra]
+>Refer more about coordinate system [here](<./Coordinate System.md>)
 ## Coulombs (again but with vectors)
 ![diagram](<../Assets/Coulumbs_law.png>)
 $$|\overline{F_{12}}| \Rightarrow \frac{Q_1Q_2}{4\pi\varepsilon_o|\overline{r_{12}}|^2} \  ; \  F_{12} = |\overline{F12}|\hat{r_{12}}$$
@@ -39,4 +42,11 @@ $$\overline{F} = \frac{1}{4\pi\epsilon_o} (
 ## Electric Fields and Intensity
 - In the direction of the force applied
 - SI Unit :- $E = \frac{Volts}{meter}\ (or)\ \frac{V}{m}$
-- Formula :- $$E = \frac{\overline{F}}{q}\ =\ \frac{Q\hat{r}}{4\pi\varepsilon_o|r|^2}$$
+- Formula :- $$\overline{E} = \frac{\overline{F}}{q}\ =\ \frac{Q\hat{r}}{4\pi\varepsilon_o|r|^2}$$
+
+# Electric field for different geometries
+## Point charge
+## Line
+## Ring
+## Disk
+# Gauss Law
