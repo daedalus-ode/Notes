@@ -238,5 +238,8 @@
 >[!Note]
 >RV32 and RV64 has 32 bit instruction size. The difference is the size of ALU and more instructions to deal with double words. like the `ldw` 
 # External links
-- [Excalidraw](../../Excalidraw)
-- [Proje`ctF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
+- [Excalidraw](../Assets/COD.excalidraw)
+>[!Note]
+>1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
+>2. Click on the menu icon in the top left corner and open the file.
+- [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
