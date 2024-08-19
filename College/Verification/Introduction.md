@@ -1,15 +1,70 @@
+# Table of Contents
+- [Verification Guidelines](#verification-guidelines)
+- [Basic Test bench]
+- [Directed testing]
+- [Methodology basics]
+- [Constrained Random Stimulus](#constrained-random-stimulus)
 
 # Keywords
 - Data Types
-	- UDP - User Defined Primitives
-	- Built in primitives - Macros that are built in to the PDK
+	- Variable definitions
+		- UDP - User Defined Primitives
+		- Built in primitives - Macros that are built in to the PDK
+	- Number of states
+		- 4 state 
+			- values - 0, 1, X, Z
+			- example - reg, integer, time, wire
+		- 2 state
+			- values - 0, 1
+			- example - real, realtime
 - Port mapping
 	- Nominal - Mapped with keywords 
 	- Positional - Mapped with position of the ports given 
 - Contention problem (Multiple driver problem)
 	- Multiple possible values, same port driven by multiple wires.
+# Verification Guidelines
+- Test whether the functionalities of a design meets the specifications provided. Also test the boundaries where the design can be used beyond the specs
+- Testing levels
+	- Block level - easiest, test input vs output functionality of a block
+	- Integration phase - look for bugs when multiple block are connected to each other
+>[!note]
+>*A little History*
+>- Pre 2000s - Vera and e verification languages were used to develop testbenches. It used the RVM and eRM methodologies respectively
+>- Today we use System Verilog for both design and verification because of it's maintainable and reusable environment
+>- The methodologies under SV include
+>	- OVM (Open Verification Methodology) - Cadence
+>	- AVM (Advanced Verification Methodology) - Mentor Graphics
+>	- VMM (Verification Methodology Manual) - Synopsis
+>	- UVM (Universal Verification Methodology) - Accellera Company
+# Basic Test bench
+The following steps are applied through a testbench
+- Generate stimulus
+- Apply stimulus to the DUT
+- Capture the response
+- Check for correctness
+- Measure progress against the overall verification goals
+# Directed testing
+- Manually testing each test vector, logging and verification of results
+- Quick results with ample staffing due to minimal infrastructure requirements 
+- Steady progress
+# Methodology basics
+- Constrained-random stimulus
+- Functional coverage  
+- Layered test-bench using transactors  
+- Common test-bench for all tests  
+- Test case-speciﬁc code kept separate from test-bench
+# Constrained Random Stimulus
+- The main pain point of Random stimulus is the self-checking points
+- While it takes longer for a random test-bench to run it's 1st test, it'll find bugs more faster than the directed test-bench where each stimulus is built from scratch
+- We constraint the values sent to the design to just a relevant range and record the outputs and compare it with the predicted results
+- We still use directed tests to cover tests that are not covered by random test constraints
 # Data types
 ## Verilog
+- wire - net data types with default value of z, suitable for continuous assignment
+- reg - variable data types with default value of x, suitable for procedural assignments
+- integer - 4 state, signed, 32 bit data type with default value X
+- time - 64 bit, unsigned variable used for debugging purposes
+- real - 2 state floating point variable with default value 0.0
 ## System Verilog
 
 | Name               | Sign     | Size           | Range             |
@@ -19,11 +74,8 @@
 | byte unsigned      | Unsigned | 8 bits         | 0 to $2^8-1$      |
 | short int          | Signed   | 16 bits        | -32,768 to 32,767 |
 | short int unsigned | Unsigned | 16 bits        | 0 to $2^{16}-1$   |
-| int                | Signed   | 32 bits        |                   |
-| int unsigned       | Unsigned | 32 bits        |                   |
-| long int           | Signed   | 64 bits        |                   |
-| long int unsigned  | Unsigned | 64 bits        |                   |
-| string             |          | Array of chars |                   |
+| int                | Signed   | 32 bits        |            <br>              igned       | Unsigned | 32 bits        |                              t           | Signed   | 64 bits        |                              t unsigned  | Unsigned | 64 bits        |                                          |          | Array of chars |                              
+# To be revised ... #todo
 # Arrays
 - Slicing
 	- Packed

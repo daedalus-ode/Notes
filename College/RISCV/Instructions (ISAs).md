@@ -158,7 +158,7 @@
 >WD - Data bus (Destination)
 >WS - Address bus (Source)
 ## Types of Instructions
-#TODO 
+#todo 
 - R-Type (Register)
 	- In this type of instructions, only data from the registers are used for execution of instructions. 
 	- Instructions
@@ -176,7 +176,7 @@
 		- `xori`
 		- `ori`
 	- L-type (Load)
-		#TODO : What type of instruction it come under?
+		#todo: What type of instruction it come under?
 		- ex. `lw rd, imm12(rs1)` or `lw x5, 0x04(x10)`
 		- PC -> Code memory -> CU, Register, mux -> ALU -> MemRead=1, mux -> Result -> WD (Register) 
 		- 5 Stages
@@ -243,3 +243,6 @@
 >1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
 >2. Click on the menu icon in the top left corner and open the file.
 - [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
+
+
+

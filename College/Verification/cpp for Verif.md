@@ -11,3 +11,8 @@ The drawback of verilator include
 
 # Testbenches in C
 Yes it exists
+
+# External Sources
+- [Verilator docs](https://verilator.org/guide/latest/)
+- [GH Intro to verilator basics](https://github.com/n-kremeris/verilator_basics)
+- [ZipCPU 101 formal verif](https://zipcpu.com/tutorial/)
