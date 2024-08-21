@@ -157,8 +157,8 @@
 >[!Note]
 >WD - Data bus (Destination)
 >WS - Address bus (Source)
-## Types of Instructions
-#todo 
+## Types of Instructions #todo
+ 
 - R-Type (Register)
 	- In this type of instructions, only data from the registers are used for execution of instructions. 
 	- Instructions
