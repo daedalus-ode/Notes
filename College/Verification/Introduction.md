@@ -42,7 +42,7 @@ The following steps are applied through a testbench
 - Apply stimulus to the DUT
 - Capture the response
 - Check for correctness
-- Measure progress against the overall verification goals
+- Measure progress against the overall verification goals (Functional coverage)
 # Directed testing
 - Manually testing each test vector, logging and verification of results
 - Quick results with ample staffing due to minimal infrastructure requirements 
@@ -74,9 +74,13 @@ The following steps are applied through a testbench
 | byte unsigned      | Unsigned | 8 bits         | 0 to $2^8-1$      |
 | short int          | Signed   | 16 bits        | -32,768 to 32,767 |
 | short int unsigned | Unsigned | 16 bits        | 0 to $2^{16}-1$   |
-| int                | Signed   | 32 bits        |            <br>              igned       | Unsigned | 32 bits        |                              t           | Signed   | 64 bits        |                              t unsigned  | Unsigned | 64 bits        |                                          |          | Array of chars |                              
+
 # To be revised ... #todo
-# Arrays
+## Constant
+- `const` is used to define a variable as a constant
+## Parameter
+- These values can be changed during initialisation of the module
+## Arrays
 - Slicing
 	- Packed
 		- `bit [7:0] packed_array;`
@@ -113,7 +117,42 @@ The following steps are applied through a testbench
 > [!Note]
 > If we try to access an out of bounds value of an array, it will give the default value of 0 in system verilog.
 
-# Queue
+## Structure
+- Unpacked by default
+- Can be made packed using `packed` keyword. 
+	```verilog
+	typedef struct packed {
+		logic [7:0] sa;
+		logic [7:0] da;
+	} blah;
+	...
+	```
+
+## Union
+- Similar to structure
+- The datatypes inside a union can only be used individually at a time.
+- Unions only allocate enough memory for the biggest data in the Union
+- Unions are used when you have to use memory location for two or more data members. Struct allocate enough space to store all the fields in the struct
+## Type conversion (Casting)
+- Static
+	- Converts data types during compile time
+	```verilog
+	module casting
+	real r_a;
+	int i_a;
+	initial begin
+		r_a = (2.1 * 3.2)
+		i_a = int`(2.1 * 3.2); // Ceiling or flooring dependendant on compiler
+		
+		$display("real value = %f",r_a);
+		$display("int value = %d", i_a);
+	end
+	endmodule
+	```
+- Dynamic
+	- Used for dynamic datatypes
+	- Done using `$cast`
+## Queue
 - A dynamic ordered array of homogeneous elements 
 - syntax
 	```verilog
@@ -137,3 +176,13 @@ The following steps are applied through a testbench
 		b1 = q1.pop_back();
 	end
 	```
+## String
+- Used to store a collection of characters
+- Functions
+	- `s.getc(0)` - gets the ASCII value of the characters
+	- `s.tolower()` - converts all characters in s string to lower case
+	- `s.len()` - length of string
+	- `s.putc(s.len()-1, "-")` - put a character in a specific position of a string 
+
+# #search
+- Poco yoka method - Japanese verification method 
