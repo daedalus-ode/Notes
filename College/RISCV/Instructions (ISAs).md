@@ -92,12 +92,13 @@
 # RISCV
 ## Instruction Format
 
-| 31-25    | 24-20 | 19-15 | 14-12 | 11-7 | 6-0    |
-| -------- | ----- | ----- | ----- | ---- | ------ |
-| Function | rs2   | rs1   | fun3  | rd   | opcode |
+| Instruction Formats | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0    |
+| ------------------- | ----- | ----- | ----- | ----- | ---- | ------ |
+| Register            | func7 | rs2   | rs1   | fun3  | rd   | opcode |
+| Immeditate          |       |       |       |       |      |        |
 - Fields
 	- Opcode (7 bit): Determines the operation to be perform based on the instructions given in the code
-	- fun3 (10 bits), fun7 (10 bits): depicts the type and operation to be performed
+	- fun3 (10 bits), fun7 (10 bits): depicts the type and operation to be performed ex: SUB/ ADD with same adder
 	- destination register: 
 		- register
 		- data memory
@@ -235,14 +236,35 @@
 	- More number of register increases the clock cycle time because it takes electric signals longer to travel
 	- The number of bits it would take in instruction format to address a register.
 ## Types of RV
+- RV32G
+	- A combined set of IMAFD extensions
+	- 32 bit representation
+- Complex
+	- 16 bit representations
+	- 
 >[!Note]
 >RV32 and RV64 has 32 bit instruction size. The difference is the size of ALU and more instructions to deal with double words. like the `ldw` 
+
+## Encoding
+>[!Question]
+>Make the following into binary encodings
+```asm
+add rd, rs1, rs2
+rd rs1, imm(rs2)
+sw rs2, imm(rs1)
+```
+
+| fun7     | rs2    | rs1    | fun3 | rd     | opcode   | Hex        |
+| -------- | ------ | ------ | ---- | ------ | -------- | ---------- |
+| 0000_000 | 0_1010 | 1001_1 | 000  | 1001_0 | 011_0011 | 0x00A98933 |
+|          |        |        |      |        |          |            |
 # External links
 - [Excalidraw](../Assets/COD.excalidraw)
->[!Note]
->1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
->2. Click on the menu icon in the top left corner and open the file.
+	>1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
+	>2. Click on the menu icon in the top left corner and open the file.
 - [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
+- [RISCV Extension List Gist](https://gist.github.com/dominiksalvet/2a982235957012c51453139668e21fce)
+- [RISCV Instruction Groupings](https://medium.com/@software.ML.and.AI/risc-v-instructions-by-group-ccaf59acda6b)
 
 
 
