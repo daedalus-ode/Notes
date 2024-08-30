@@ -22,6 +22,23 @@
 	- Positional - Mapped with position of the ports given 
 - Contention problem (Multiple driver problem)
 	- Multiple possible values, same port driven by multiple wires.
+# Data types
+## Verilog
+- wire - net data types with default value of z, suitable for continuous assignment
+- reg - variable data types with default value of x, suitable for procedural assignments
+- integer - 4 state, signed, 32 bit data type with default value X
+- time - 64 bit, unsigned variable used for debugging purposes
+- real - 2 state floating point variable with default value 0.0
+## System Verilog
+
+| Name               | Sign     | Size           | Range             |
+| ------------------ | -------- | -------------- | ----------------- |
+| bit                | Unsigned | 1 bit          | 0,1               |
+| byte               | Signed   | 8 bits         | -128 to 127       |
+| byte unsigned      | Unsigned | 8 bits         | 0 to $2^8-1$      |
+| short int          | Signed   | 16 bits        | -32,768 to 32,767 |
+| short int unsigned | Unsigned | 16 bits        | 0 to $2^{16}-1$   |
+
 # Verification Guidelines
 - Test whether the functionalities of a design meets the specifications provided. Also test the boundaries where the design can be used beyond the specs
 - Testing levels
@@ -43,38 +60,29 @@ The following steps are applied through a testbench
 - Capture the response
 - Check for correctness
 - Measure progress against the overall verification goals (Functional coverage)
-# Directed testing
-- Manually testing each test vector, logging and verification of results
-- Quick results with ample staffing due to minimal infrastructure requirements 
-- Steady progress
 # Methodology basics
 - Constrained-random stimulus
 - Functional coverage  
 - Layered test-bench using transactors  
 - Common test-bench for all tests  
 - Test case-speciﬁc code kept separate from test-bench
-# Constrained Random Stimulus
+# Types Of Test-Benches
+## Directed testing
+- Manually testing each test vector, logging and verification of results
+- Quick results with ample staffing due to minimal infrastructure requirements 
+- Steady progress
+## Constrained Random Stimulus
 - The main pain point of Random stimulus is the self-checking points
 - While it takes longer for a random test-bench to run it's 1st test, it'll find bugs more faster than the directed test-bench where each stimulus is built from scratch
 - We constraint the values sent to the design to just a relevant range and record the outputs and compare it with the predicted results
 - We still use directed tests to cover tests that are not covered by random test constraints
-# Data types
-## Verilog
-- wire - net data types with default value of z, suitable for continuous assignment
-- reg - variable data types with default value of x, suitable for procedural assignments
-- integer - 4 state, signed, 32 bit data type with default value X
-- time - 64 bit, unsigned variable used for debugging purposes
-- real - 2 state floating point variable with default value 0.0
-## System Verilog
-
-| Name               | Sign     | Size           | Range             |
-| ------------------ | -------- | -------------- | ----------------- |
-| bit                | Unsigned | 1 bit          | 0,1               |
-| byte               | Signed   | 8 bits         | -128 to 127       |
-| byte unsigned      | Unsigned | 8 bits         | 0 to $2^8-1$      |
-| short int          | Signed   | 16 bits        | -32,768 to 32,767 |
-| short int unsigned | Unsigned | 16 bits        | 0 to $2^{16}-1$   |
-
+![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZ9nwVv5vFHWipBzDddlcHU0pcuVlXNM-kw&s)
+# Coverage convergence
+![Coverage](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCh3Zd3q-S0RUVjVCL3vBPPhKaqlPqgis3w&s)
+- Functional coverage
+	- Only the relevant code and function need to be covered
+- Code coverage
+	- All the code lines needs to be covered under even if it's irrelevant 
 # To be revised ... #todo
 ## Constant
 - `const` is used to define a variable as a constant
@@ -185,4 +193,6 @@ The following steps are applied through a testbench
 	- `s.putc(s.len()-1, "-")` - put a character in a specific position of a string 
 
 # #search
-- Poco yoka method - Japanese verification method 
+## Extras
+- Poco yoka method - Japanese verification method,  a method to cover all human errors
+- Layered test-bench

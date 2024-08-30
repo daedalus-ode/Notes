@@ -187,14 +187,14 @@
 			- `lw`
 			- `lbu`
 			- `lhu`
-- U-type
+- U-type (Unsigned)
 - S-type (Store)
 	- ex. `sw rs2, imm12(rs1)` or `sw x5, 0x04(x10)`
 	- Instructions
 		- `sb`
 		- `sd`
 		- `sw`
-- B-type
+- B-type (Branch)
 - J- type
 - Example Code
 	-  R-type
@@ -238,10 +238,16 @@
 ## Types of RV
 - RV32G
 	- A combined set of IMAFD extensions
+		- I - Integer
+		- M - Multiplication
+		- A - Atomic
+		- F - Float (single precision)
+		- D - Float (Double precision)
 	- 32 bit representation
-- Complex
+- Compressed #todo 
 	- 16 bit representations
-	- 
+	- 2 byte instructions extension
+
 >[!Note]
 >RV32 and RV64 has 32 bit instruction size. The difference is the size of ALU and more instructions to deal with double words. like the `ldw` 
 
@@ -258,6 +264,65 @@ sw rs2, imm(rs1)
 | -------- | ------ | ------ | ---- | ------ | -------- | ---------- |
 | 0000_000 | 0_1010 | 1001_1 | 000  | 1001_0 | 011_0011 | 0x00A98933 |
 |          |        |        |      |        |          |            |
+
+## Sign extension of immediate 12 bit numbers
+- Immediate instructions in RISCV uses 12 bit signed immediate values. Therefore during such operations, the 12 bit number are sign extended 
+- For example 
+	- 0x744 -> 0x0000_0744
+	- 0x801 -> 0xFFFF_F801
+>[!Question]
+>What is the result stored in the destination register ?
+```asm
+addi x15, x12, 0x7FF
+addi x5, x12, 2049
+
+addi x5, x0, 0x744
+and x5, x0, 2049
+```
+## Shifting Operators
+- Right shift ( $/2$ )
+	- Logical - doesn't maintain signs of number
+	- Arithmetic - maintains the sign of the number
+- Left shift ( $\times2$ )
+	- Logical - Shift left
+>[!question]
+>Divide -88 by 8 using only shift operators
+```asm
+.data 
+a: -88
+
+.text
+la x10, a
+# it can also be stored like
+# addi x10, x0, -88
+srli x11, x10, 3 # logic shift, the sign of the number is not maintained
+srai x11, x10, 3 # arithmetic shift, the sign of the number is maintained
+```
+
+>[!Question]
+>Convert C code into asm. `B[8] = a[i-j]`
+>Assume the variables 
+>f -> x5
+>g -> x6
+>h -> x7
+>i -> x28
+>j -> x29
+>Base Address of a -> x10
+>Base Address of b -> x11
+```asm
+sub x30, x28, x29
+slli x30, x30, 2
+add x31, x30, x10
+lw x30, 0(x31)
+
+```
+>[!note]
+>If the indexes are know use following steps to calculate
+>- shift the index register towards left by depending on size of word (Byte, 1 - Half, 2 - word, 3 - double)
+
+## Branching #todo 
+- If statements with goto 
+- Needs a sign extended 13 bit number (unlike the normal 12 bits) to increase the range of branching
 # External links
 - [Excalidraw](../Assets/COD.excalidraw)
 	>1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
@@ -265,6 +330,3 @@ sw rs2, imm(rs1)
 - [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
 - [RISCV Extension List Gist](https://gist.github.com/dominiksalvet/2a982235957012c51453139668e21fce)
 - [RISCV Instruction Groupings](https://medium.com/@software.ML.and.AI/risc-v-instructions-by-group-ccaf59acda6b)
-
-
-
