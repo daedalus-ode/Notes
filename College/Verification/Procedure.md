@@ -85,8 +85,22 @@
 	- memory is not assigned in the stack
 	- inout direction
 
-# Stratified Event Queue
+# Stratified Event Queue #todo 
 - Active region
 - Inactive region
 - NBA region
 - Postponed region
+# Verilog coding guidelines
+1. For sequential logic use non-blocking assignment
+2. modelling latches use non-blocking assignment
+3. Combinational logic, use blocking assignments
+4. With blocking and sequential combined, use non blocking assignment
+
+# Races
+- RTL vs Test-bench
+	- If there is an always block in the RTL and testbench, there exists a race condition b/w them. 
+	- To prevent this we use a `program` block in test-bench which is executed way after the event queue of the RTL
+	- When program is used in testbench and module is RTL, RTL code is executed before program block and given more priority
+- Program Block
+# System Verilog Stratified Event Queue
+- RTL and program block is run separately. This 

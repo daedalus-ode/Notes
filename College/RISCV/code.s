@@ -41,3 +41,28 @@ lw x5,
 
 .text
 
+
+# Check if a given 8 bit number is a 2 out of 5 code
+# Most significant of the 3 bits must be zero
+# If the least significant 5 bits there must only be 2 1's
+
+.data 
+a: .byte 0xab, 0xe0
+
+.text
+la x10, a
+lb x11, 0(x10)
+lb x12, 1(x10)
+and x13, x11, x12
+seqz x20, x13
+
+
+
+//and x13, x11, 0x07
+
+# Write a program to swap the content of 2 memory locations. 
+# Assume 2 elements in the memory location, as a[0], location 2 holds a[1].
+# if a[0] is less than a[1]  swap memory, else no action
+
+
+# Using bubble sort
