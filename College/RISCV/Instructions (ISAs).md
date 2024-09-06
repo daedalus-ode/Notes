@@ -330,7 +330,7 @@ lw x30, 0(x31)
 ## Branching #todo 
 - If statements with goto 
 - Needs a sign extended 13 bit number (unlike the normal 12 bits) to increase the range of branching
-## Support for .. #todo 
+## Support for extended immediate values #todo 
 - 2 rules
 	- Divide the constant into Imm 12:31 and Imm 0:12
 	- Is the constant give signed or unsigned
@@ -341,6 +341,12 @@ lw x30, 0(x31)
 	- PC relative
 ## Procedures in Computer Hardware
 - Put the parameters to pass to the subroutine(procedure) into the argument register (a0 - a7)
+- After a subroutine (procedure), the register values which were backed up into the stack memory is retrieved creating the concept of localisation of variables in a function
+## Stack
+- SP - Stack Pointer used to indicate the allocated memory used by the stack
+- LIFO architecture
+- No dedicated instructions for pushing and popping in a stack. We use the same `lw` and `sw` instructions
+
 # External links
 - [Excalidraw](../Assets/COD.excalidraw)
 	>1. To open excalidraw files, download the the `.excalidraw` file and head to the [site](https://excalidraw.com/)
@@ -348,4 +354,4 @@ lw x30, 0(x31)
 - [ProjectF RISCV cheatsheet](https://projectf.io/posts/riscv-cheat-sheet/)
 - [RISCV Extension List Gist](https://gist.github.com/dominiksalvet/2a982235957012c51453139668e21fce)
 - [RISCV Instruction Groupings](https://medium.com/@software.ML.and.AI/risc-v-instructions-by-group-ccaf59acda6b)
-- [COD Codes](<./C)
+- [COD Codes](<./COD Codes.md>)
