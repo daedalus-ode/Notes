@@ -104,3 +104,12 @@
 - Program Block
 # System Verilog Stratified Event Queue
 - RTL and program block is run separately. This 
+# File Structure 
+- design code
+- test-bench code - contains the program block to test the module
+- top module
+# Program constructs 
+- A program block cannot contain 
+- A program block cannot contain nested program blocks
+- A program block cannot contain always block
+- Don't need $finish. It'll automatically terminate
