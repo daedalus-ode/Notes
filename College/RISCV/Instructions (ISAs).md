@@ -339,6 +339,11 @@ lw x30, 0(x31)
 - Addressing modes define different ways to define 2 operands
 - Addressing on branches
 	- PC relative
+- Instructions
+	- `lui`
+	- `auipc rd, imm[31:12]` 
+		- used to calculate the base address of symbol defined in data segment using PC relative addressing mode
+		- Used for calculating the long target address of symbol beyond the range of jal
 ## Procedures in Computer Hardware
 - Put the parameters to pass to the subroutine(procedure) into the argument register (a0 - a7)
 - After a subroutine (procedure), the register values which were backed up into the stack memory is retrieved creating the concept of localisation of variables in a function
@@ -346,6 +351,7 @@ lw x30, 0(x31)
 - SP - Stack Pointer used to indicate the allocated memory used by the stack
 - LIFO architecture
 - No dedicated instructions for pushing and popping in a stack. We use the same `lw` and `sw` instructions
+## 
 
 # External links
 - [Excalidraw](../Assets/COD.excalidraw)
@@ -355,3 +361,9 @@ lw x30, 0(x31)
 - [RISCV Extension List Gist](https://gist.github.com/dominiksalvet/2a982235957012c51453139668e21fce)
 - [RISCV Instruction Groupings](https://medium.com/@software.ML.and.AI/risc-v-instructions-by-group-ccaf59acda6b)
 - [COD Codes](<./COD Codes.md>)
+
+# Questions
+- assume the base address of variable k in the data memory to be accesed is 0x8000_0020. PC present -> 0x0000_000c. Write the program to initialise the base address in x11, without using psuedo instructions
+- Assume the address of symbol is 0x7FFF_F018 PCpresent is 0x0000_0008. WAP to change the control of execution to address of symbol
+1) $$relative\ address\ =\ base\ address\ -\ PCpresent$$
+	$$relative\ address\ =\ 0x7fff$$

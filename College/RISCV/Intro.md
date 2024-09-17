@@ -5,7 +5,7 @@
 3. Arithmetic for computer
 4. Computer abstraction
 ## TB
-Computer organization and Design - RISCV edition
+Computer organisation and Design - RISCV edition
 
 ## Plans
 0-5 - Assembly

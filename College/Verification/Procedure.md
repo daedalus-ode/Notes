@@ -113,3 +113,6 @@
 - A program block cannot contain nested program blocks
 - A program block cannot contain always block
 - Don't need $finish. It'll automatically terminate
+
+# Arbiter 
+- A governor/scheduler for limited set of resources
