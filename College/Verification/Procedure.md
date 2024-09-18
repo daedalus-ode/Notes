@@ -85,17 +85,43 @@
 	- memory is not assigned in the stack
 	- inout direction
 
-# Stratified Event Queue #todo 
-- Active region
-- Inactive region
-- NBA region
-- Postponed region
 # Verilog coding guidelines
 1. For sequential logic use non-blocking assignment
 2. modelling latches use non-blocking assignment
 3. Combinational logic, use blocking assignments
 4. With blocking and sequential combined, use non blocking assignment
-
+5. Don't mix blocking and bob blocking in always block
+6. Don't make assignments to same variable from more than one always block
+7. Use `$strobe` to display values after non blocking assignments
+8. Do not make #0 procedural assignment
+# Stratified Event Queue #todo 
+## Verilog
+- Active region
+	- Blocking statements
+	- Evaluate RHS of NBA
+	- $display
+	- Evaluate inputs and updates outputs of primitives
+- Inactive region
+	- #0 Assignment
+- NBA region
+	- Updates LHS of NBA
+- Postponed region
+	- $strobe
+	- $monitor
+## System Verilog
+- Active - Execution of module
+	- Pre-active
+	- Active
+	- Inactive
+	- Pre-NBA
+	- NBA
+	- Post-NBA
+- Reactive - Execution of Program block
+	- Reactive
+	- Re-Inactive
+	- Pre-Re-NBA
+	- Re-NBA
+	- Post-Re-NBA
 # Races
 - RTL vs Test-bench
 	- If there is an always block in the RTL and testbench, there exists a race condition b/w them. 

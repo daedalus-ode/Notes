@@ -284,8 +284,5 @@ The following steps are applied through a testbench
 	- Only the relevant code and function need to be covered
 - Code coverage
 	- All the code lines needs to be covered under even if it's irrelevant 
+# Stratified event queue
 # To be revised ... #todo
-# #search
-## Extras
-- Poco yoka method - Japanese verification method,  a method to cover all human errors
-- Layered test-bench
