@@ -1,3 +1,4 @@
+# Structure
 
 |                    |                                                                                        |         | EU                                      |
 | ------------------ | -------------------------------------------------------------------------------------- | ------- | --------------------------------------- |
@@ -25,7 +26,7 @@
 			- 0010 - add
 			- 0110 - subtract
 
-# stages
+# Stages
 1) Instruction fetch
 2) Instruction decoding
 3) Execution
@@ -48,3 +49,58 @@
 > Assume that logic blocks used o implement a processor's single cycle datapath have following latencies
 > 
 > 1) what is the latency of R-type instruction (how long the clock period be to ensure instruction works correctly)
+
+
+# Pipelining #todo 
+- Added hardware
+	- 4 Pipelining Registers between all stages
+	- More control signals
+# Hazards
+When pipelining the instructions due to data dependencies, corruption of results occur. To solve this following methods are implemented
+## Stalling 
+- Pausing the execution of cycles by stalling
+	- Done by using manually inserting `nop` (no operation) instructions
+	- Increases clock latency
+
+> [!Example]
+> Assume the following sequence of instructions are executed in pipeilined arch. 
+> 
+> 
+```asm
+add x15, x12,x11
+lw x13, 8(x15)
+lw x12, 0(x12)
+or x13, x15,x13
+sw x13, 0(x15)
+```
+Latency:- 9 clk cycles
+```asm
+add x15, x12,x11
+nop
+nop
+lw x13, 8(x15)
+lw x12, 0(x12)
+nop
+or x13, x15,x13
+nop
+nop
+sw x13, 0(x15)
+```
+Latency:- 14 clk cycles
+
+## Forwarding 
+-  Solving data inter dependency issues
+	- By bypassing (tapping) the results from certain stages before the register is ready (after the write back stage) and forwarding to next stage
+	- Requires additional hardware, using direct wires instead of registers 
+### Forwarding unit
+- Ex-hazard
+- Mem-hazard
+	- Potential/ double hazard
+
+> [!question]
+> 1. Assuming stalling 2
+```asm
+ld x2, x1, x3
+and x12, x2, x5
+```
+## Reordering

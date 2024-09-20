@@ -142,3 +142,12 @@
 
 # Arbiter 
 - A governor/scheduler for limited set of resources
+# Static Class
+## Properties
+- global access to variables if its static
+## Keywords
+- `this` - used to refer ***class properties explicitly***
+- `super`
+## Copy
+- Shallow copy
+- Deep copy - skip for ISA 1

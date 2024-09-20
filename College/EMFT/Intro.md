@@ -9,3 +9,4 @@
 	- Engineering Electromagnetism by Hayt & Bick
 
 [Personal notes](Coordinate%20System.md)
+[Formulae](Formulae.md)
