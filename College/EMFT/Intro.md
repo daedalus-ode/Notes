@@ -8,5 +8,5 @@
 - Reference book
 	- Engineering Electromagnetism by Hayt & Bick
 
-[Personal notes](Coordinate%20System.md)
-[Formulae](Formulae.md)
+- [Personal notes](Coordinate%20System.md)
+- [Formulae](Formulae.md)
