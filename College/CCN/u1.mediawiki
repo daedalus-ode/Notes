@@ -1,9 +1,5 @@
 = U1 =
 
-- [ ] Network edge pg 20
-- [ ] Numericals) pg 31, 32, 45 - 48, 129 - 146
-- [ ] U2 1st part - shwetha text - pg 174 - 182, 187 - 209
-
 == Terms ==
 * Computer Network - hosts interconnected through communication links and packet switches
 * Internet - computer network that interconnects wider devices around the world
