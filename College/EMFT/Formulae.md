@@ -2,18 +2,23 @@
 - [Unit 1](#unit-1)
 - [Unit 2](#unit-2)
 # Unit 1
+
 ## Point charge
-$$D = \frac{Q}{4\pi r^2}a_r$$
+$$D = \frac{Q}{4\pi r^2}a_r$$ <br>
+
 ## Line charge
 $$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$<br>
 - Where $\alpha_1$ and $\alpha_2$ are angles that the line subtends to the point
-- Infinite line charge - <br>$$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
+- Infinite line charge - <br>
+$$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
+
 ## Surface charge
 - Electric field due to surface charge is <br>
 $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
 - Substituting $dS \rightarrow \rho\ d\phi\ d\rho$ and solving for **Infinite Sheet Charge**<br>
 $$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
 - Where $a_n$ is unit vector perpendicular to sheet <br>
+
 ## Volume charge
 - Electric field due to volume charge is <br>
 $$E = \int_S \frac{\rho_sdV}{4\pi\varepsilon_0R^2}a_R$$
@@ -21,10 +26,12 @@ $$E = \int_S \frac{\rho_sdV}{4\pi\varepsilon_0R^2}a_R$$
 - With $a_R = cos(\alpha) a_Z - sin(\alpha) a_p$ <br>
 $$E = \frac{Q}{4\pi \varepsilon_o} z^2$$
 <br>$$Q = \rho_v \frac{4}{3}\pi a^3$$
+
 ## Electric Flux Density
 Also known as Electric Displacement <br>
 $$D = \varepsilon_o E$$<br>
 $$\psi = \int_S D \cdot dS$$
+
 ## Divergence
 $$\nabla \cdot A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$
 ### Cartesian
@@ -36,6 +43,7 @@ $$\nabla \cdot A =
 \frac{\partial A_r}{\partial r}+
 \frac{1}{r}\frac{\partial A_\theta }{\partial \theta}+
 \frac{1}{rsin\theta}\frac{\partial A_\phi}{\partial \phi}$$
+
 ## Divergence Theorem
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
 - Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
