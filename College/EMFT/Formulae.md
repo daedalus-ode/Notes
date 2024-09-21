@@ -73,8 +73,13 @@ $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$
 
 $$\Psi = \int_S D \cdot dS = Q_{enclosed} = \int_V \rho_v\ dV$$
 
-- Applying divergence theorem <br> $$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$
-- Comparing the equations :- We get Maxwell's 1st equation<br> $$\rho_v = \nabla \cdot D$$
+- Applying divergence theorem 
+
+$$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$
+
+- Comparing the equations :- We get Maxwell's 1st equation 
+
+$$\rho_v = \nabla \cdot D$$
 
 ### Applying Gauss law
 - Infinite line charge
@@ -130,49 +135,85 @@ $$-\frac{dQ_{in}}{dt} = -\int_v \frac{\partial \rho_v}{\partial t} dV$$
 $$\nabla .J = -\frac{\partial \rho_v}{\partial t}$$
 
 >[!Note]
->For DC current $\frac{\partial \rho_v}{\partial t} = 0$
->Therefore $\nabla .J =0$
+>For DC current 
+> 
+> $\frac{\partial \rho_v}{\partial t} = 0$
+> 
+>Therefore 
+> 
+> $\nabla .J =0$
+> 
+
 ## Relaxation time
+
 $$\rho_v = \rho_{vo}\ e^{-\frac{t}{T_r}}
 \text{ where } T_r = \frac{\varepsilon}{\sigma}
 $$
 
 ## Poisson's Equation
+
 $$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$ <br>
+
 > [!Note]
 > Laplacian operator :-
->General Formula
+> General Formula
+> 
 >$$
 >\nabla^2 A = \frac{1}{h_1 h_2 h_3}\ [\ 
 >\frac{\partial}{\partial a_1}\ (\frac{h_2 h_3}{h_1}\frac{\partial A}{\partial a_1})+
 >\frac{\partial}{\partial a_2}\ (\frac{h_1 h_3}{h_2}\frac{\partial A}{\partial a_2})+
 >\frac{\partial}{\partial a_3}\ (\frac{h_1 h_2}{h_3}\frac{\partial A}{\partial a_2})
 >\ ]$$
+> 
 ## Laplace Equation
 If there is no charge enclosed in the volume :- <br>
+
 $$\nabla^2 V = 0$$
 
 ## Boundary conditions
-Maxwell's Equations :-<br>
-$$\oint_S \overline{D} . d\overline{S} = Q_{enc} \rightarrow 1^{st} \text{ Equation}$$ <br>
+Maxwell's Equations :-
+
+$$\oint_S \overline{D} . d\overline{S} = Q_{enc} \rightarrow 1^{st} \text{ Equation}$$
+
 $$\oint_L \overline{E}.d \overline{l} = 0 \rightarrow 2^{nd} \text{ Equation}$$
+
 ### Dielectric - Dielectric
 ![Picture](College/Assets/dielec-dielec.png)
-$$\varepsilon_1 = \varepsilon_o\ \varepsilon_{r1} \text{ (and) } \varepsilon_2 = \varepsilon_o\ \varepsilon_{r2}$$  <br>
-- For a closed path `abcda`. The tangential components of an electric field crossing the interface undergoes no change :- <br> $$E_{1t} = E_{2t}$$<br>
- - Or <br> $$\frac{D_{1t}}{\varepsilon_1} = \frac{D_{2t}}{\varepsilon_2}$$ <br>
-- Similarly for cylindrical Gaussian surface <br>$$D_{1n} - D_{2n} = \rho_s$$ <br> 
-- Or when $\rho_s = 0$ where $\rho_s$ is charge density in the interface surface<br>
+
+$$\varepsilon_1 = \varepsilon_o\ \varepsilon_{r1} \text{ (and) } \varepsilon_2 = \varepsilon_o\ \varepsilon_{r2}$$ 
+
+- For a closed path `abcda`. The tangential components of an electric field crossing the interface undergoes no change :-  
+ 
+$$E_{1t} = E_{2t}$$
+
+ - Or 
+
+$$\frac{D_{1t}}{\varepsilon_1} = \frac{D_{2t}}{\varepsilon_2}$$
+
+- Similarly for cylindrical Gaussian surface 
+
+$$D_{1n} - D_{2n} = \rho_s$$ <br> 
+
+- Or when $\rho_s = 0$ where $\rho_s$ is charge density in the interface surface
+
 $$\varepsilon_1\ E_{1n} = \varepsilon_2\ E_{2n}$$
-- Refraction<br>
-$$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\varepsilon_1}{\varepsilon_2} = \frac{\varepsilon_{r1}}{\varepsilon_{r2}}$$ <br>
+
+- Refraction
+
+$$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\varepsilon_1}{\varepsilon_2} = \frac{\varepsilon_{r1}}{\varepsilon_{r2}}$$
+
 - $\theta_1$, $\theta_2$ -> angle of electric field with normal to surface in each medium
+
 ### Conductor - Dielectric
-$$E_t = 0$$ <br>
+
+$$E_t = 0$$
+
 $$D_n = \rho_s$$
 
 ### Conductor - Free space
-$$D_t = \varepsilon_o E_t = 0$$<br>
+
+$$D_t = \varepsilon_o E_t = 0$$
+
 $$D_n = \varepsilon_o E_n = \rho_s$$
 
 
