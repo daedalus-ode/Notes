@@ -178,7 +178,7 @@ $$\oint_S \overline{D} . d\overline{S} = Q_{enc} \rightarrow 1^{st} \text{ Equat
 $$\oint_L \overline{E}.d \overline{l} = 0 \rightarrow 2^{nd} \text{ Equation}$$
 
 ### Dielectric - Dielectric
-![Picture](College/Assets/dielec-dielec.png)
+![Picture](<../Assets/dielec-dielec.png>)
 
 $$\varepsilon_1 = \varepsilon_o\ \varepsilon_{r1} \text{ (and) } \varepsilon_2 = \varepsilon_o\ \varepsilon_{r2}$$ 
 
@@ -218,6 +218,7 @@ $$D_n = \varepsilon_o E_n = \rho_s$$
 
 
 ---
+
 # Unit 2
 ## Drift velocity
 $$v_e = -\mu_e \overline{E}$$
@@ -232,13 +233,19 @@ $$G = \frac{\sigma A}{l} = \frac{A}{\rho\ l}$$
 ## Joule's law
 $$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
 ## Polarisation
-$$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$ <br>
-- P -> electric polarisation field<br>
-$$\overline{P} = \varepsilon_o \chi_e \overline{E}$$<br>
-$$\overline{D} = \varepsilon_o \overline{E} + \overline{P} = \varepsilon \overline{E}$$ <br>
-$$\varepsilon_r = \varepsilon_o (1+\chi_e)$$<br>
-$\chi_e$ -> Susceptibility
-$\varepsilon_r$ -> relative permeability or dielectric strength
+$$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$
+
+- P -> electric polarisation field
+- 
+$$\overline{P} = \varepsilon_o \chi_e \overline{E}$$
+
+$$\overline{D} = \varepsilon_o \overline{E} + \overline{P} = \varepsilon \overline{E}$$
+
+$$\varepsilon_r = \varepsilon_o (1+\chi_e)$$
+
+- $\chi_e$ -> Susceptibility
+- $\varepsilon_r$ -> relative permeability or dielectric strength
+
 ## Capacitance
 $$C = \frac{Q}{V}$$ <br>
 
