@@ -2,7 +2,7 @@ This repo contains the digital notes from my semester classes and some more.
 
 # Topics Covered
 ## Semester
-- [CCN](<./College/CCN/Intro.md>) (0%)
+- [CCN](<./College/CCN/Intro.md>) (50%)
 - [EMFT](<./College/EMFT/Intro.md>) (20%)
 - [LIC](<./College/LIC/Intro.md>) (0%)
 - [RISCV](<./College/RISCV/Intro.md>) (75%)
