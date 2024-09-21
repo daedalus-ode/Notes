@@ -5,14 +5,14 @@
 ## Point charge
 $$D = \frac{Q}{4\pi r^2}a_r$$
 ## Line charge
-$$E = \frac{-\rho_L}{4\pi\epsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$<br>
+$$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$<br>
 Where $\alpha_1$ and $\alpha_2$ are angles that the line subtends to the point
-- Infinite line charge - <br>$$E = \frac{\rho_L}{2\pi\epsilon_o\rho}a_p$$
+- Infinite line charge - <br>$$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
 ## Surface charge
 Electric field due to surface charge is <br>
 $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
 Substituting $dS \rightarrow \rho\ d\phi\ d\rho$ and solving for **Infinite Sheet Charge**<br>
-$$E = \frac{\rho_s}{2\epsilon_0}a_n$$
+$$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
 Where $a_n$ is unit vector perpendicular to sheet <br>
 ## Volume charge
 Electric field due to volume charge is <br>
@@ -25,19 +25,15 @@ Also known as Electric Displacement <br>
 $$D = \varepsilon_o E$$<br>
 $$\psi = \int_S D \cdot dS$$
 ## Divergence
-$$\nabla \cdot A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$ <br> General Formula <br>
-$$\nabla \cdot A = \frac{1}{h_1 h_2 h_3} [
-\frac{\partial}{\partial a_1}\frac{h_2 h_3}{h_1}A+
-\frac{\partial}{\partial a_2}\frac{h_1 h_3}{h_2}A+
-\frac{\partial}{\partial a_3}\frac{h_1 h_2}{h_3}A]$$
+$$\nabla \cdot A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$ <br> 
 ### Cartesian
 $$\nabla \cdot A = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}$$
 ### Cylindrical
-$$\nabla \cdot A = \frac{1}{\rho}\frac{\partial \rho A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
+$$\nabla \cdot A = \frac{\partial A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
 ### Spherical
 $$\nabla \cdot A = 
-\frac{1}{r^2}\frac{\partial (r^2 A_r)}{\partial r}+
-\frac{1}{rsin\theta}\frac{\partial (A_\theta sin\theta)}{\partial \theta}+
+\frac{\partial A_r}{\partial r}+
+\frac{1}{r}\frac{\partial A_\theta }{\partial \theta}+
 \frac{1}{rsin\theta}\frac{\partial A_\phi}{\partial \phi}$$
 ## Divergence Theorem
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ <br> Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
@@ -81,23 +77,66 @@ $$\rho_v = \rho_{vo}\ e^{-\frac{t}{T_r}}
 \text{ where } T_r = \frac{\varepsilon}{\sigma}
 $$
 
-## Poisson's Equation #todo 
-
-## Laplace Equation #todo 
+## Poisson's Equation
+$$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$ <br>
+> [!Note]
+> Laplacian operator :-
+>General Formula
+>$$
+>\nabla^2 A = \frac{1}{h_1 h_2 h_3}\ [\ 
+>\frac{\partial}{\partial a_1}\ (\frac{h_2 h_3}{h_1}\frac{\partial A}{\partial a_1})+
+>\frac{\partial}{\partial a_2}\ (\frac{h_1 h_3}{h_2}\frac{\partial A}{\partial a_2})+
+>\frac{\partial}{\partial a_3}\ (\frac{h_1 h_2}{h_3}\frac{\partial A}{\partial a_2})
+>\ ]$$
+## Laplace Equation
+If there is no charge enclosed in the volume :- <br>
+$$\nabla^2 V = 0$$
 
 ## Boundary conditions
 Maxwell's Equations :-<br>
 $$\oint_S \overline{D} . d\overline{S} = Q_{enc} \rightarrow 1^{st} \text{ Equation}$$ <br>
 $$\oint_L \overline{E}.d \overline{l} = 0 \rightarrow 2^{nd} \text{ Equation}$$
 ### Dielectric - Dielectric
+![Picture](College/Assets/dielec-dielec.png)
 $$\varepsilon_1 = \varepsilon_o\ \varepsilon_{r1} \text{ (and) } \varepsilon_2 = \varepsilon_o\ \varepsilon_{r2}$$  <br>
 For a closed path `abcda`. The tangential components of an electric field crossing the interface undergoes no change :- <br> $$E_{1t} = E_{2t}$$<br>
  Or <br> $$\frac{D_{1t}}{\varepsilon_1} = \frac{D_{2t}}{\varepsilon_2}$$ <br>
-Similarly for cylindrical Gaussian surface $$D_{1n} - D_{2n} = \rho_s$$ <br> Or when $\rho_s = 0$<br>
+Similarly for cylindrical Gaussian surface <br>$$D_{1n} - D_{2n} = \rho_s$$ <br> Or when $\rho_s = 0$ where $\rho_s$ is charge density in the interface surface<br>
 $$\varepsilon_1\ E_{1n} = \varepsilon_2\ E_{2n}$$
- 
+- Refraction<br>
+$$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\varepsilon_1}{\varepsilon_2} = \frac{\varepsilon_{r1}}{\varepsilon_{r2}}$$ <br>
+$\theta_1$, $\theta_2$ -> angle of electric field with normal to surface in each medium
 ### Conductor - Dielectric
+$$E_t = 0$$<br>
+$$D_n = \rho_s$$
 ### Conductor - Free space
+$$D_t = \varepsilon_o E_t = 0$$<br>
+$$D_n = \varepsilon_o E_n = \rho_s$$
 ---
-# Unit 2 #todo 
+# Unit 2
+## Drift velocity
+$$v_e = -\mu_e \overline{E}$$
+## Ohm's law 
+$$R = \frac{V}{I}$$<br> 
+- Point form
+$$\overline{J} = \sigma \overline{E}$$
+## Resistance
+$$R = \frac{l}{\sigma A}$$
+## Conductivity
+$$G = \frac{\sigma A}{l} = \frac{A}{\rho\ l}$$
+## Joule's law
+$$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
+## Polarisation
+$$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$ <br>
+P -> electric polarisation field<br>
+$$\overline{P} = \varepsilon_o \chi_e \overline{E}$$<br>
+$$\overline{D} = \varepsilon_o \overline{E} + \overline{P} = \varepsilon \overline{E}$$ <br>
+$$\varepsilon_r = \varepsilon_o (1+\chi_e)$$<br>
+$\chi_e$ -> Susceptibility
+$\varepsilon_r$ -> relative permeability or dielectric strength
+## Capacitance
+$$C = \frac{Q}{V}$$ <br>
+$$RC = \frac{\varepsilon}{\sigma}$$
+
+
 
