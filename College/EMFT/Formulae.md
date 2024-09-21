@@ -4,83 +4,131 @@
 # Unit 1
 
 ## Point charge
-$$D = \frac{Q}{4\pi r^2}a_r$$ <br>
+$$D = \frac{Q}{4\pi r^2}a_r$$
 
 ## Line charge
-$$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$<br>
+
+$$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$
+
 - Where $\alpha_1$ and $\alpha_2$ are angles that the line subtends to the point
-- Infinite line charge - <br>
+- Infinite line charge -
+
 $$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
 
 ## Surface charge
-- Electric field due to surface charge is <br>
+- Electric field due to surface charge is
+
 $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
-- Substituting $dS \rightarrow \rho\ d\phi\ d\rho$ and solving for **Infinite Sheet Charge**<br>
+
+- Substituting $dS \rightarrow \rho\ d\phi\ d\rho$ and solving for **Infinite Sheet Charge**
+
 $$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
+
 - Where $a_n$ is unit vector perpendicular to sheet <br>
 
 ## Volume charge
-- Electric field due to volume charge is <br>
+- Electric field due to volume charge is
+
 $$E = \int_S \frac{\rho_sdV}{4\pi\varepsilon_0R^2}a_R$$
-<br>
-- With $a_R = cos(\alpha) a_Z - sin(\alpha) a_p$ <br>
+
+- With $a_R = cos(\alpha) a_Z - sin(\alpha) a_p$ 
+
 $$E = \frac{Q}{4\pi \varepsilon_o} z^2$$
-<br>$$Q = \rho_v \frac{4}{3}\pi a^3$$
+
+$$Q = \rho_v \frac{4}{3}\pi a^3$$
 
 ## Electric Flux Density
-Also known as Electric Displacement <br>
-$$D = \varepsilon_o E$$<br>
+Also known as Electric Displacement
+
+$$D = \varepsilon_o E$$
+
 $$\psi = \int_S D \cdot dS$$
 
 ## Divergence
+
 $$\nabla \cdot A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$
+
 ### Cartesian
+
 $$\nabla \cdot A = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}$$
+
 ### Cylindrical
+
 $$\nabla \cdot A = \frac{\partial A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
+
 ### Spherical
+
 $$\nabla \cdot A = 
 \frac{\partial A_r}{\partial r}+
 \frac{1}{r}\frac{\partial A_\theta }{\partial \theta}+
 \frac{1}{rsin\theta}\frac{\partial A_\phi}{\partial \phi}$$
 
 ## Divergence Theorem
+
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
+
 - Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
+
 ## Gauss law
-$$\Psi = \int_S D \cdot dS = Q_{enclosed} = \int_V \rho_v\ dV$$<br> 
-- Applying divergence theorem <br> $$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$ <br>
+
+$$\Psi = \int_S D \cdot dS = Q_{enclosed} = \int_V \rho_v\ dV$$
+
+- Applying divergence theorem <br> $$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$
 - Comparing the equations :- We get Maxwell's 1st equation<br> $$\rho_v = \nabla \cdot D$$
+
 ### Applying Gauss law
 - Infinite line charge
+
 $$\rho_L l = Q = \int_S D \cdot dS = D_\rho \int_S dS = D_\rho\ 2\pi\ \rho\ l$$<br> $$D_\rho = \frac{\rho_L l}{2\pi\ \rho\ l}\ \rightarrow\ D = \frac{\rho_L}{2\pi\ \rho}a_\rho$$
+
 - Infinite sheet charge
-$$\rho_S A = D_z(A+A) = 2D_zA$$<br>
+
+$$\rho_S A = D_z(A+A) = 2D_zA$$
+
 $$D = D_z a_z = \frac{\rho_s}{2}a_z\ (or)\ E = \frac{\rho_s}{2\varepsilon_o}a_z$$
+
 - Uniformly charged sphere
+
 $$D = 
 \begin{cases}
 \frac{r}{3}\ \rho_o\ a_r & \text{if } 0 \lt r \le a\\
 \frac{a^3}{3\ r^2}\ \rho_o\ a_r & \text{if } r \ge a
 \end{cases}$$
+
 ## Electric Potential
-$$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$ <br>
+
+$$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$
+
 - Absolute potential - work done per charge to bring it from infinity to r <br>
+
 $$V = - \int_\infty^r E \cdot dl$$
+
 ## Relation b/w E and V
-- For a closed loop:- <br> $$\int_L E \cdot dl = 0$$ <br> 
-- Applying stoke's theorem <br>
- $$\int_L E \cdot dl = \int_S(\nabla \times E) \cdot dS = 0\ (or)\ \nabla \times E = 0$$
- - Electric field is the gradient of V :- <br>
+- For a closed loop:- <br> $$\int_L E \cdot dl = 0$$
+- Applying stoke's theorem
+
+$$\int_L E \cdot dl = \int_S(\nabla \times E) \cdot dS = 0\ (or)\ \nabla \times E = 0$$
+ 
+ - Electric field is the gradient of V :-
+ 
  $$E = -\nabla V$$
+ 
 ## Continuity Equation
-$$I_{out} = \oint J.dS = -\frac{dQ_{in}}{dt}$$<br>
-- With divergence theorem :- <br>
-$$\oint J.dS = \int_v \nabla . J\ dV$$ <br>
-- Also <br>
-$$-\frac{dQ_{in}}{dt} = -\int_v \frac{\partial \rho_v}{\partial t} dV$$<br>
-- Therefore **Continuity Equation**<br>
-$$\nabla .J = -\frac{\partial \rho_v}{\partial t}$$<br>
+
+$$I_{out} = \oint J.dS = -\frac{dQ_{in}}{dt}$$
+
+- With divergence theorem :-
+
+$$\oint J.dS = \int_v \nabla . J\ dV$$ 
+
+- Also
+
+$$-\frac{dQ_{in}}{dt} = -\int_v \frac{\partial \rho_v}{\partial t} dV$$
+
+- Therefore **Continuity Equation**
+
+$$\nabla .J = -\frac{\partial \rho_v}{\partial t}$$
+
 >[!Note]
 >For DC current $\frac{\partial \rho_v}{\partial t} = 0$
 >Therefore $\nabla .J =0$
@@ -120,11 +168,14 @@ $$\varepsilon_1\ E_{1n} = \varepsilon_2\ E_{2n}$$
 $$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\varepsilon_1}{\varepsilon_2} = \frac{\varepsilon_{r1}}{\varepsilon_{r2}}$$ <br>
 - $\theta_1$, $\theta_2$ -> angle of electric field with normal to surface in each medium
 ### Conductor - Dielectric
-$$E_t = 0$$<br>
+$$E_t = 0$$ <br>
 $$D_n = \rho_s$$
+
 ### Conductor - Free space
 $$D_t = \varepsilon_o E_t = 0$$<br>
 $$D_n = \varepsilon_o E_n = \rho_s$$
+
+
 ---
 # Unit 2
 ## Drift velocity
@@ -151,6 +202,3 @@ $\varepsilon_r$ -> relative permeability or dielectric strength
 $$C = \frac{Q}{V}$$ <br>
 
 $$RC = \frac{\varepsilon}{\sigma}$$
-
-
-
