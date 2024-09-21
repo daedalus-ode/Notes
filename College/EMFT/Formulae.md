@@ -24,7 +24,7 @@ $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
 
 $$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
 
-- Where $a_n$ is unit vector perpendicular to sheet <br>
+- Where $a_n$ is unit vector perpendicular to sheet
 
 ## Volume charge
 - Electric field due to volume charge is
@@ -222,16 +222,22 @@ $$D_n = \varepsilon_o E_n = \rho_s$$
 # Unit 2
 ## Drift velocity
 $$v_e = -\mu_e \overline{E}$$
+
 ## Ohm's law 
 $$R = \frac{V}{I}$$<br> 
+
 - Point form
 $$\overline{J} = \sigma \overline{E}$$
+
 ## Resistance
 $$R = \frac{l}{\sigma A}$$
+
 ## Conductivity
 $$G = \frac{\sigma A}{l} = \frac{A}{\rho\ l}$$
+
 ## Joule's law
 $$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
+
 ## Polarisation
 $$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$
 
@@ -247,6 +253,6 @@ $$\varepsilon_r = \varepsilon_o (1+\chi_e)$$
 - $\varepsilon_r$ -> relative permeability or dielectric strength
 
 ## Capacitance
-$$C = \frac{Q}{V}$$ <br>
+$$C = \frac{Q}{V}$$
 
 $$RC = \frac{\varepsilon}{\sigma}$$

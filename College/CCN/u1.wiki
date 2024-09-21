@@ -1,0 +1,73 @@
+= U1 =
+
+- [ ] Network edge pg 20
+- [ ] Numericals) pg 31, 32, 45 - 48
+- [ ] U2 1st part - shwetha text - pg 174 - 182, 187 - 209
+
+== Terms ==
+* Computer Network - hosts interconnected through communication links and packet switches
+* Internet - computer network that interconnects wider devices around the world
+* ISP - business entity which provides internet access to end-systems
+* POP (Point of Presence) - place where end systems connect to ISP
+* Network Edge #todo
+* Network Core
+* Types of switching
+	* Circuit - resource allocation before data transfer
+		* TDM (Time Division Multiplexing)
+		* FDM (Frequency division multiplexing)
+	* Packet - Multiplexing of packets
+* Access Network Nomenclature
+	* Size - LAN, WAN, Home networks
+	* Topology - Tree, Star, Ring, bus, point-to-point
+	* Physical media - Wired (DSL, Cable, Fiber to home) or wireless
+* Delays
+	* Processing Delay - time taken to inspect a packet
+	* Queuing delay - time spent by paket in queue before processing
+	* Transmission delay - time taken to push a packet on to the link
+	* Packet Switch delay - sum of all above delays
+	* Propogation delay - time for packet to travel over link
+	* End-to-end delay - total time spent from source to destination
+* Traffic Intensity - La/R (where L - packet size, R - link rate, a - arrival rate)
+* Throughput - rate at which destination host recieves the packets
+* Encapsulation - After performing a sub-task, the source appends some information to the packet called header to the data it processed
+* Decapsulation - Before performing a sub-task the destination removes the corresponding header
+
+== Protocol layers ==
+* Requirements - syntax, Semantics, Timing
+* Types
+	* TCP/IP
+		* From ARPANET
+		* 5 Layers
+			* Application
+				* generate/recieve data
+				* data is called messages
+				* messages can be big in size
+				* can have QoS requirements
+			* Transport
+				* responsible for the QoS
+				* does multiplexing (sender), demultiplexing (reciever)
+				* Maps each message to corresponding process
+				* Appends a header to each message
+				* segment = message + header
+			* Network
+				* fragment segments into packets
+				* moves packets hop by hop based on src & dest. IP address
+				* appends new header to each packet
+				* datagram = packet + header
+			* Link
+				* pushes packet into link
+				* can forward frames using mac address
+				* appends new header to each packet
+				* frame = packet + header
+				* check for error in frame
+				* provide synchronization in reciever
+			* Physical
+				* physical interface
+				* converts binary to signals
+				* does modulation, demodulation, transmission, reception and filtering of signals
+	* OSI
+
+== Application architecture ==
+* Client - Server
+* Peer to Peer
+* 
