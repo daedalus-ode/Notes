@@ -123,11 +123,18 @@
 ** Socket number 25
 * Messages between mail servers are encoded in ASCII
 
-| HTTP                                   | SMTP                                 |
-| --------------------------             | -----------------------------        |
-| Allows different encodings             | Only ASCII encoding supported        |
-| Pull type protocol                     | Push type protocol                   |
-| Distinguishes b/w object types         | Doesn't distinguish b/w object types |
+{| class="wikitable"
+style="margin:auto"
+|+ HTTP vs SMTP
+|-
+! HTTP                                   !! SMTP
+|-
+| Allows different encodings             || Only ASCII encoding supported
+|-
+| Pull type protocol                     || Push type protocol
+|-
+| Distinguishes b/w object types         || Doesn't distinguish b/w object types 
+|}
 
 == DNS ==
 * Domain Name System
@@ -166,14 +173,14 @@ style="margin:auto"
 |}
 
 === Process ===
-1) Send HTTP request to webserver for the 1st time
-2) DNS server performs decapsulation and reads the DNS query. 
-3) Then, it generates a DNS reply having the IP address of the web server
-4) DNS server encapsulates the reply in a UDP segment and passes it
-5) Upon receiving the DNS reply, the encapsulation of the TCP handshake (i.e., TCP connection request) segment resumes using the IP address obtained for the web server.
-6) This TCP segment is passed to the web server
-7) Web server replies with a TCP handshake (i.e., TCP connection grant) of its own from port 80
-8) Upon receiving the TCP handshake from the web server, the host performs encapsulation of the HTTP request and then sends it to the web server
+# Send HTTP request to webserver for the 1st time
+# DNS server performs decapsulation and reads the DNS query. 
+# Then, it generates a DNS reply having the IP address of the web server
+# DNS server encapsulates the reply in a UDP segment and passes it
+# Upon receiving the DNS reply, the encapsulation of the TCP handshake (i.e., TCP connection request) segment resumes using the IP address obtained for the web server.
+# This TCP segment is passed to the web server
+# Web server replies with a TCP handshake (i.e., TCP connection grant) of its own from port 80
+# Upon receiving the TCP handshake from the web server, the host performs encapsulation of the HTTP request and then sends it to the web server
 
 === Hierarchy of DNS servers ===
 * Root DNS servers
