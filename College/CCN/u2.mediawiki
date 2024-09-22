@@ -274,7 +274,7 @@ TCP (Transmission Control Protocol) is a reliable protocol for transferring data
 ** Receive Window Updates: Each host informs the other about its buffer status using the receive window field in the ACKs it sends.
 ** If host B is receiving data faster than its application can process, its receive window will shrink, and it will notify host A to slow down its sending rate.
 
-== Summary: ==
+=== Summary: ===
 * TCP Segments: Data is broken into segments, each with a sequence number.
 * Acknowledgments (ACKs): Confirm receipt of segments, using cumulative acknowledgments to simplify.
 * Lost Acknowledgments: If an ACK is lost, TCP uses timeouts and retransmissions. Fast retransmit helps speed up recovery.
@@ -352,17 +352,17 @@ The network layer prepares datagrams by inserting IP header
 === IPv4 ===
 
 ==== Datagram Format ====
-** Version: 4-bit number specifying IP version 4. Routers identify the datagram type using this field.
-** Header length: 4-bit field to give the size of the IP header. It is expressed as 32-bit words. When options field is (rarely) present the length exceeds 20 bytes.
-** Type of service: 8-bit field for providing differentiated services (e.g., real-time and non-real-time) in networks
-** Datagram length: 16-bit field for proving the length of the IP header plus payload.
-** Identifier, flags, fragmentation offset: IPv4 routers fragment large datagrams based on the MTU supported by the links reassembling the original datagram at the destination host. Identifier is a 16-bit field, flags occupy 3 bits and fragmentation offset is a 13-bit field
-** Time-to-live (TTL): 8-bit field which indicates the number of hops the packet can travel without being discarded. A router decrements this field by 1 upon processing
-** Protocol: 8 bit field to describe the upper layer protocol for the datagram (e.g., 6-TCP, 17-UDP, 1-ICMP)
-** Header checksum: 16-bit field for error detection. Only the header fields are used in the calculation. Whenever a datagram is forwarded or fragmented this field is updated
-** Source and destination IP addresses: 32-bit fields each. Routers use the destination IP field for delivering the datagrams to the destination host. Give a usage of source IP address
-** Options: This field is rarely used and has been removed in IPv6.
-** Payload: Variable length field which holds the upper layer information encapsulated into the datagram. The max size of payload is 65,535 bytes, however, rarely this size occurs. Datagram size in Ethernet range is 46-1500 bytes
+* Version: 4-bit number specifying IP version 4. Routers identify the datagram type using this field.
+* Header length: 4-bit field to give the size of the IP header. It is expressed as 32-bit words. When options field is (rarely) present the length exceeds 20 bytes.
+* Type of service: 8-bit field for providing differentiated services (e.g., real-time and non-real-time) in networks
+* Datagram length: 16-bit field for proving the length of the IP header plus payload.
+* Identifier, flags, fragmentation offset: IPv4 routers fragment large datagrams based on the MTU supported by the links reassembling the original datagram at the destination host. Identifier is a 16-bit field, flags occupy 3 bits and fragmentation offset is a 13-bit field
+* Time-to-live (TTL): 8-bit field which indicates the number of hops the packet can travel without being discarded. A router decrements this field by 1 upon processing
+* Protocol: 8 bit field to describe the upper layer protocol for the datagram (e.g., 6-TCP, 17-UDP, 1-ICMP)
+* Header checksum: 16-bit field for error detection. Only the header fields are used in the calculation. Whenever a datagram is forwarded or fragmented this field is updated
+* Source and destination IP addresses: 32-bit fields each. Routers use the destination IP field for delivering the datagrams to the destination host. Give a usage of source IP address
+* Options: This field is rarely used and has been removed in IPv6.
+* Payload: Variable length field which holds the upper layer information encapsulated into the datagram. The max size of payload is 65,535 bytes, however, rarely this size occurs. Datagram size in Ethernet range is 46-1500 bytes
 
 ==== Addressing ====
 #todo
