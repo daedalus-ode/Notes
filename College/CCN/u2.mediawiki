@@ -1,8 +1,5 @@
 = Unit 2 =
 
-- [ ] U2 - shwetha text - pg 174 - 182, 187 - 209, 222 - 235
-- [ ] [Chatgpt link](https://chatgpt.com/share/66efee7e-5a90-800f-a150-681efc0b6a91 )
-
 == TCP ==
 * Transmission control protocol
 * Principles of reliable data transfer
