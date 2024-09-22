@@ -77,14 +77,23 @@
 
 == Transport layer services ==
 
-| Application            | App. Layer Protocol      | Transport Protocol  |
-| ---------------------- | ------------------------ | ------------------- |
-| E-mail                 | SMTP                     | TCP                 |
-| Remote terminal access | Telnet                   | TCP                 |
-| Web                    | HTTP                     | TCP                 |
-| File transfer          | FTP                      | TCP                 |
-| Streaming media        | HTTP                     | TCP                 |
-| Internel telephony     | SIP, RTP or proprietary  | UDP or TCP          |
+{| class="wikitable"
+style="margin:auto"
+|-
+! Application            !! App. Layer Protocol      !! Transport Protocol
+|-
+| E-mail                 || SMTP                     || TCP
+|-
+| Remote terminal access || Telnet                   || TCP
+|-
+| Web                    || HTTP                     || TCP
+|-
+| File transfer          || FTP                      || TCP
+|-
+| Streaming media        || HTTP                     || TCP
+|-
+| Internel telephony     || SIP, RTP or proprietary  || UDP or TCP
+|}
 
 == Web and HTTP ==
 * Client (Web browser) sends HTTP request specifying object requested
@@ -221,3 +230,50 @@ style="margin:auto"
 ** CDN (Content Distribution Networks)
 *** objective - maintain videos closer to clients and resolve server assignment
 *** distributed architecture of server clusters to store content
+
+{| class="wikitable"
+style="margin:auto"
+|+ Architecture
+|-
+| Enter deep                          || Bring home                        
+|-
+| Large number of small clusters      || Small number of large clusters    
+|-
+| Deployed in ISPs                    || Deployed in IXPs                  
+|-
+| Challenge :- Maintainence, overhead || Challenge :- delay and throughput 
+|}
+
+== Transport Layer ==
+* Provides logical connection between process
+* Protocols are implemented in the end systems not network routers
+* Performs multiplexing and demultiplexing of segments in a host
+* Performs error detection and in-order assembly of segments
+* Can provide QoS support for applications
+* Protocols
+	* UDP
+		* Connectionless protocol
+		* No acknowledgment of transmitted segments
+		* No throughput regulation
+		* No service guarantees
+		* Small packet header overhead (8 bytes)
+		* Suited for application which are time sensitive
+		* Segments - src port, dest. port, length, checksum
+		* Checksum -
+			* Sender -
+				* Split the segment into 16-bit numbers and sum them
+				* Wrap around carry (if any)
+				* Take 1’s complement of the sum (call this UDP checksum)
+			* Reciever -
+				* Recompute checksum including UDP checksum
+				* If answer is all 1s then it means no error has occurred
+	* TCP
+		* Connection oriented
+		* Adaptive throughput based on network congestion
+		* Supports flow control at recieving node
+		* Guarantees reliable data transfer
+* Sockets
+	* Each active application is associated by one or more sockets assigned by the operating system
+	* Used in multiplexing and demultiplexing of segments
+* Multiplexing - Segments leaving different sockets in a end-system are interleaved so that the network layer can assign the source IP address 
+* Demultiplexing - Segments arriving from the network layer with the same destination IP address, corresponding to the end-system,  are separated and delivered to respective sockets
