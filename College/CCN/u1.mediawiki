@@ -150,12 +150,20 @@
 ** Iterative
 ** Recursive
 
-| Type     | Name                          | Value                         |
-| -------- | ----------------------------- | ----------------------------- |
-| A        | Hostname                      | IP Address                    |
-| NS       | Hostname                      | Name od Authoritative DNS     |
-| CNAME    | Alias host name (web server)  | Canonical name of web server  |
-| MX       | Alias host name (mail server) | Canonical mail server name    |
+{| class="wikitable"
+style="margin:auto"
+|+ DNS Query Types
+|-
+! Type     !! Name                          !! Value 
+|-
+| A        || Hostname                      || IP Address
+|-
+| NS       || Hostname                      || Name od Authoritative DNS
+|-
+| CNAME    || Alias host name (web server)  || Canonical name of web server
+|-
+| MX       || Alias host name (mail server) || Canonical mail server name
+|}
 
 === Process ===
 1) Send HTTP request to webserver for the 1st time
