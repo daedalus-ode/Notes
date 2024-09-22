@@ -1,0 +1,52 @@
+= Unit 2 =
+
+- [ ] U2 - shwetha text - pg 174 - 182, 187 - 209, 222 - 235
+- [ ] [Chatgpt link](https://chatgpt.com/share/66efee7e-5a90-800f-a150-681efc0b6a91 )
+
+== TCP ==
+* Transmission control protocol
+* Principles of reliable data transfer
+** Packet loss reasons
+*** Corrupt packet dropped by reciever
+*** Packet drop at router due to lack of buffer space
+*** Long queuing delays in the router
+** Reliable data transfer
+*** Requires connection oriented approach
+*** Throughput and delay may be compromised
+** 
+
+
+* Predecessors
+** RDT protocol
+*** Stop and wait RDT protocol
+**** RDT 1.0
+***** Assumes no bit errors and no packet delays
+***** Solution: Works on the principle of acknowledgement
+***** Next packet is sent after the acknowledgment
+**** RDT 2.0
+***** Bit errors can occure only in the packet transmitted
+***** No packet delays assumed
+***** Solution: Introduction of checksum
+***** If checksum corrupt, send back NAK packet
+***** Else send back ACK
+**** RDT 2.2
+***** Bit error can occur both ways
+***** Assume no packet delays
+***** Difficult to distinguish between old and new packets
+***** ACK and NAK can also get corrupted
+***** Solution: Sequence numbers (use 0 and 1 alternatively) and checksum
+***** Host B just uses ACK packets with sequence (0 or 1)
+**** RDT 4.0
+***** Bit errors and packet delays occur in 2 way packet transmission
+***** Solution: Host A starts a timer as soon as packet is transmitted
+***** If ACK packet from host B is lost/old/corrupt host host A retransmits after timer expires
+***** Else host A sends next packet and restart timer
+*** Pipelining RDT protocols - better link utilization
+**** GBN
+**** SR
+** TCP
+*** Hybrid of above RDT protocol with some additions
+*** More robust
+*** Adaptive to network congestion
+
+
