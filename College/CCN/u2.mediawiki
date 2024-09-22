@@ -1,4 +1,5 @@
 = Unit 2 =
+
 - [ ] [Chatgpt link](https://chatgpt.com/share/66efee7e-5a90-800f-a150-681efc0b6a91 )
 
 == TCP ==
@@ -11,8 +12,6 @@
 ** Reliable data transfer
 *** Requires connection oriented approach
 *** Throughput and delay may be compromised
-** 
-
 
 * Predecessors
 ** RDT protocol
@@ -47,13 +46,12 @@
 *** More robust
 *** Adaptive to network congestion
 
-
 == Pipelining in Data Transfer: Simple Overview ==
 When data is sent over a network, it often gets split into smaller parts called packets. Normally, the sender waits for the receiver to confirm that each packet was received correctly before sending the next one. This is called a Stop-and-Wait approach. However, this can be slow because the sender has to pause and wait for an acknowledgment (ACK) after every packet.
 
 To speed things up, we use pipelining, which allows the sender to send multiple packets at once without waiting for an ACK after each one. Pipelining increases efficiency by keeping more packets in transit between the sender and receiver.
 
-Key Changes Due to Pipelining
+=== Key Changes Due to Pipelining ===
 * Larger Sequence Numbers: Because multiple packets are sent at once, each packet needs a unique sequence number to keep track of its order. The sequence numbers come from a fixed range, like [0, 2^k-1], where "k" is the number of bits used for the sequence numbers.
 
 * Fixed Number of Packets in the Pipeline: The sender can only send a certain number of packets at once, based on the sliding window size (more on this below).
@@ -62,9 +60,8 @@ Key Changes Due to Pipelining
 
 * Careful Use of Timers: Timers are set for retransmitting packets that might have been lost or corrupted. The way timers are used is different in each protocol.
 
-Two Types of Pipelining Protocols
+=== Two Types of Pipelining Protocols ===
 There are two common pipelining protocols used for reliable data transfer:
-
 * Go-Back-N (GBN) Protocol
 * Selective Repeat (SR) Protocol
 Let’s break down how each works:
@@ -73,29 +70,25 @@ Let’s break down how each works:
 In the Go-Back-N (GBN) protocol, the sender can send up to N packets without waiting for an acknowledgment. Here’s how it works step by step:
 
 # Sender's Sliding Window:
-
-The sender has a sliding window that keeps track of up to N unacknowledged packets (packets waiting for an ACK).
-It sends these N packets one after the other without stopping.
-The window slides forward as ACKs come in.
+** The sender has a sliding window that keeps track of up to N unacknowledged packets (packets waiting for an ACK).
+** It sends these N packets one after the other without stopping.
+** The window slides forward as ACKs come in.
 
 # Single Timer for All Packets:
-
-The sender sets one timer for the oldest unacknowledged packet.
-If this timer expires before the sender gets an ACK, the sender retransmits all packets in the window starting from the oldest one.
+** The sender sets one timer for the oldest unacknowledged packet.
+** If this timer expires before the sender gets an ACK, the sender retransmits all packets in the window starting from the oldest one.
 
 # Cumulative Acknowledgments (ACKs):
-
-The receiver sends ACKs for packets it receives in the correct order.
-If a packet arrives out of order (or is corrupted), the receiver just sends the last ACK it sent. For example, if packet 1 is missing, the receiver will keep sending ACK 0 until packet 1 is correctly received.
-The sender considers any ACK as a confirmation that all previous packets have been received correctly (cumulative ACK).
+** The receiver sends ACKs for packets it receives in the correct order.
+** If a packet arrives out of order (or is corrupted), the receiver just sends the last ACK it sent. For example, if packet 1 is missing, the receiver will keep sending ACK 0 until packet 1 is correctly received.
+** The sender considers any ACK as a confirmation that all previous packets have been received correctly (cumulative ACK).
 
 # How Retransmission Works:
-If the timer for the oldest packet expires, the sender goes back and retransmits that packet and all subsequent ones, even if some of them were already received successfully.
+** If the timer for the oldest packet expires, the sender goes back and retransmits that packet and all subsequent ones, even if some of them were already received successfully.
 
 # Sequence Numbers:
-
-The sender and receiver use sequence numbers to keep track of packets. The number of sequence numbers is limited (based on k-bit numbers), so after reaching the max, it wraps around and starts again.
-In short: GBN is simple but can be inefficient because if one packet is lost, the sender has to retransmit all the packets in the sliding window, even if some of them were received correctly.
+** The sender and receiver use sequence numbers to keep track of packets. The number of sequence numbers is limited (based on k-bit numbers), so after reaching the max, it wraps around and starts again.
+** In short: GBN is simple but can be inefficient because if one packet is lost, the sender has to retransmit all the packets in the sliding window, even if some of them were received correctly.
 
 === Selective Repeat (SR) Protocol ===
 In the Selective Repeat (SR) protocol, the sender can send up to N packets just like in GBN, but the key difference is how it handles packet loss and retransmissions:
@@ -123,9 +116,8 @@ In the Selective Repeat (SR) protocol, the sender can send up to N packets just 
 *** A small timer value causes frequent retransmissions (even when packets are just delayed).
 *** A large timer value reduces retransmissions but might lower overall throughput.
 
-* Limitations of GBN and SR
+=== Limitations of GBN and SR ===
 Despite their benefits, GBN and SR have several limitations:
-
 ** Fixed Timer Values: Both protocols use fixed timer values, which might not adapt well to changing network conditions.
 ** Fixed Transmission Rate: The size of the sliding window is fixed, so they can’t adjust the transmission rate based on how busy or idle the network is.
 ** Message Segmentation: Breaking messages into packets happens arbitrarily, which might not always be optimal.
@@ -215,47 +207,47 @@ If a timeout occurs (i.e., an ACK is missing), the timeout interval is doubled, 
 ** TCP uses constants α = 0.125 and β = 0.25 to update the EstimatedRTT and DevRTT values.
 
 === Summary of Key Features of TCP ===
-** Sequence Numbers: Used to keep track of the order of segments.
-** Acknowledgment Numbers: Used to confirm receipt of data and manage missing segments.
-** Sliding Window: Controls how much data can be sent without overwhelming the receiver.
-** Flow Control: Uses the receive window to prevent buffer overflow at the receiver.
-** Congestion Control: Adjusts the rate of data transfer based on network conditions.
-** Timeout Interval: Dynamically adjusted based on network conditions to avoid unnecessary retransmissions and delays.
-** TCP’s adaptive approach to timers, congestion control, and flow control makes it a reliable and efficient protocol for transferring data over the internet.
+* Sequence Numbers: Used to keep track of the order of segments.
+* Acknowledgment Numbers: Used to confirm receipt of data and manage missing segments.
+* Sliding Window: Controls how much data can be sent without overwhelming the receiver.
+* Flow Control: Uses the receive window to prevent buffer overflow at the receiver.
+* Congestion Control: Adjusts the rate of data transfer based on network conditions.
+* Timeout Interval: Dynamically adjusted based on network conditions to avoid unnecessary retransmissions and delays.
+* TCP’s adaptive approach to timers, congestion control, and flow control makes it a reliable and efficient protocol for transferring data over the internet.
 
 == TCP Transmissions and Flow Control: Detailed Simple Explanation ==
 TCP (Transmission Control Protocol) is a reliable protocol for transferring data across networks. Here, we'll explain how segments are sent, how acknowledgments work, and how TCP avoids network congestion and prevents data overflow using flow control.
 
 # Sequence Numbers and Congestion Window
-* Sequence Numbers: When data is sent from one device (host A) to another (host B), it is divided into small chunks called segments. Each segment is assigned a unique sequence number.
-* The sequence number helps the receiver reassemble the data in the correct order.
-* Congestion Window: The congestion window is the batch of segments that the sender is allowed to transmit before receiving acknowledgments from the receiver. This window helps manage how much data is in transit.
-* Example:
-** Let’s say we have a series of segments with sequence numbers starting from 92.
-* First segment: Sequence number = 92
-* Next segment: Sequence number = 92 + size of the previous segment (e.g., 100 bytes) = 192
+** Sequence Numbers: When data is sent from one device (host A) to another (host B), it is divided into small chunks called segments. Each segment is assigned a unique sequence number.
+** The sequence number helps the receiver reassemble the data in the correct order.
+** Congestion Window: The congestion window is the batch of segments that the sender is allowed to transmit before receiving acknowledgments from the receiver. This window helps manage how much data is in transit.
+** Example:
+*** Let’s say we have a series of segments with sequence numbers starting from 92.
+*** First segment: Sequence number = 92
+*** Next segment: Sequence number = 92 + size of the previous segment (e.g., 100 bytes) = 192
 
 # Acknowledgments and Lost Acknowledgments
-* Acknowledgments (ACKs): When the receiver gets a segment, it sends back an acknowledgment number (ACK), indicating the sequence number of the next byte it expects to receive. This helps the sender know the data arrived correctly.
-* Cumulative Acknowledgment: The receiver can send a cumulative acknowledgment, which means that it acknowledges receiving everything up to the given sequence number.
-* Handling Lost Acknowledgments:
-* If an acknowledgment is lost (e.g., for sequence number 92), the sender will retransmit the segment after a timeout.
-* The timeout interval is doubled after each timeout (this is called exponential backoff), to account for potential network congestion.
+** Acknowledgments (ACKs): When the receiver gets a segment, it sends back an acknowledgment number (ACK), indicating the sequence number of the next byte it expects to receive. This helps the sender know the data arrived correctly.
+** Cumulative Acknowledgment: The receiver can send a cumulative acknowledgment, which means that it acknowledges receiving everything up to the given sequence number.
+** Handling Lost Acknowledgments:
+*** If an acknowledgment is lost (e.g., for sequence number 92), the sender will retransmit the segment after a timeout.
+*** The timeout interval is doubled after each timeout (this is called exponential backoff), to account for potential network congestion.
 
 # Cumulative Acknowledgment and Retransmission
-* Sometimes, an acknowledgment for a later segment might arrive before the lost acknowledgment.
-* Example: Suppose the acknowledgment for sequence number 100 arrives but the acknowledgment for 92 was lost. The sender will not retransmit the segment with sequence number 100 because the acknowledgment is cumulative (i.e., it means all segments before 100, including 92, were successfully received).
+** Sometimes, an acknowledgment for a later segment might arrive before the lost acknowledgment.
+** Example: Suppose the acknowledgment for sequence number 100 arrives but the acknowledgment for 92 was lost. The sender will not retransmit the segment with sequence number 100 because the acknowledgment is cumulative (i.e., it means all segments before 100, including 92, were successfully received).
 
 # Network Congestion and Fast Retransmit
-* Congestion Control:
-* Errors like lost segments or delayed acknowledgments happen because of network congestion. TCP adjusts the congestion window size based on network conditions, helping avoid overwhelming the network.
+** Congestion Control:
+** Errors like lost segments or delayed acknowledgments happen because of network congestion. TCP adjusts the congestion window size based on network conditions, helping avoid overwhelming the network.
 
 
 # Duplicate Acknowledgments:
-* Sometimes segments arrive out of order. When this happens, the receiver waits (e.g., 500 milliseconds) before sending an acknowledgment.
-* If out-of-order segments continue arriving, the receiver sends duplicate ACKs for the last correctly received segment.
-* If the sender gets three duplicate ACKs, it assumes that a segment was lost and initiates fast retransmit.
-* Fast Retransmit: The sender retransmits the missing segment before the timer expires, speeding up recovery.
+** Sometimes segments arrive out of order. When this happens, the receiver waits (e.g., 500 milliseconds) before sending an acknowledgment.
+** If out-of-order segments continue arriving, the receiver sends duplicate ACKs for the last correctly received segment.
+** If the sender gets three duplicate ACKs, it assumes that a segment was lost and initiates fast retransmit.
+** Fast Retransmit: The sender retransmits the missing segment before the timer expires, speeding up recovery.
 
 == TCP Flow Control and Receive Window ==
 
