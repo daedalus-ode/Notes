@@ -84,7 +84,9 @@ $$\rho_v = \nabla \cdot D$$
 ### Applying Gauss law
 - Infinite line charge
 
-$$\rho_L l = Q = \int_S D \cdot dS = D_\rho \int_S dS = D_\rho\ 2\pi\ \rho\ l$$<br> $$D_\rho = \frac{\rho_L l}{2\pi\ \rho\ l}\ \rightarrow\ D = \frac{\rho_L}{2\pi\ \rho}a_\rho$$
+$$\rho_L l = Q = \int_S D \cdot dS = D_\rho \int_S dS = D_\rho\ 2\pi\ \rho\ l$$
+
+$$D_\rho = \frac{\rho_L l}{2\pi\ \rho\ l}\ \rightarrow\ D = \frac{\rho_L}{2\pi\ \rho}a_\rho$$
 
 - Infinite sheet charge
 
@@ -104,13 +106,23 @@ $$D =
 
 $$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$
 
-- Absolute potential - work done per charge to bring it from infinity to r <br>
+- Absolute potential - work done per charge to bring it from infinity to r
 
 $$V = - \int_\infty^r E \cdot dl$$
 
 ## Relation b/w E and V
-- For a closed loop:- <br> $$\int_L E \cdot dl = 0$$
-- Applying stoke's theorem
+- For a closed loop:- 
+
+$$\int_L E \cdot dl = 0$$
+
+>[!Note]
+>**Stoke's Theorem**
+>$$\int \int_S (\overline{\nabla} \times \overline{B} ) . dS = \oint_S B . d\overline{l}$$
+>
+>**Curl**
+>![Picture](../Assets/Curl.png)
+
+- Applying **stoke's theorem**
 
 $$\int_L E \cdot dl = \int_S(\nabla \times E) \cdot dS = 0\ (or)\ \nabla \times E = 0$$
  
@@ -152,7 +164,7 @@ $$
 
 ## Poisson's Equation
 
-$$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$ <br>
+$$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$
 
 > [!Note]
 > Laplacian operator :-
@@ -166,7 +178,7 @@ $$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$ <br>
 >\ ]$$
 > 
 ## Laplace Equation
-If there is no charge enclosed in the volume :- <br>
+If there is no charge enclosed in the volume :-
 
 $$\nabla^2 V = 0$$
 
@@ -190,9 +202,9 @@ $$E_{1t} = E_{2t}$$
 
 $$\frac{D_{1t}}{\varepsilon_1} = \frac{D_{2t}}{\varepsilon_2}$$
 
-- Similarly for cylindrical Gaussian surface 
+- Similarly for cylindrical Gaussian surface
 
-$$D_{1n} - D_{2n} = \rho_s$$ <br> 
+$$D_{1n} - D_{2n} = \rho_s$$  
 
 - Or when $\rho_s = 0$ where $\rho_s$ is charge density in the interface surface
 
@@ -224,7 +236,8 @@ $$D_n = \varepsilon_o E_n = \rho_s$$
 $$v_e = -\mu_e \overline{E}$$
 
 ## Ohm's law 
-$$R = \frac{V}{I}$$<br> 
+$$R = \frac{V}{I}$$
+
 
 - Point form
 $$\overline{J} = \sigma \overline{E}$$
