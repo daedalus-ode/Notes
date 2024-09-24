@@ -242,7 +242,7 @@ $$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
 $$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$
 
 - P -> electric polarisation field
-- 
+
 $$\overline{P} = \varepsilon_o \chi_e \overline{E}$$
 
 $$\overline{D} = \varepsilon_o \overline{E} + \overline{P} = \varepsilon \overline{E}$$
@@ -256,3 +256,26 @@ $$\varepsilon_r = \varepsilon_o (1+\chi_e)$$
 $$C = \frac{Q}{V}$$
 
 $$RC = \frac{\varepsilon}{\sigma}$$
+
+### Parallel Plate
+
+$$C = \frac{Q}{V} = \frac{\varepsilon S}{d}$$
+
+$$W_E = \frac{1}{2}\int_v\varepsilon E^2 dv= \frac{1}{2} C V^2 = \frac{1}{2}QV = \frac{Q^2}{2C}$$
+
+### Coaxial
+
+$$E = \frac{Q}{2\pi\varepsilon L} ln\frac{b}{a}$$
+
+$$C = \frac{2\pi \varepsilon L}{ln\frac{b}{a}}$$
+
+### Spherical
+$$C = \frac{4\pi\varepsilon}{\frac{1}{a} - \frac{1}{b}}$$
+
+### Configurations
+#### Parrallel
+$$C = C_1 + C_2$$
+
+#### Series
+$$\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2}$$
+
