@@ -44,26 +44,34 @@ $$D = \varepsilon_o E$$
 
 $$\psi = \int_S D \cdot dS$$
 
-## Divergence
+## Gradient
 
-$$\nabla \cdot A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$
+$$\nabla A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$
 
 ### Cartesian
 
-$$\nabla \cdot A = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}$$
+$$\nabla A = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}$$
 
 ### Cylindrical
 
-$$\nabla \cdot A = \frac{\partial A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
+$$\nabla A = \frac{\partial A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
 
 ### Spherical
 
-$$\nabla \cdot A = 
+$$\nabla A = 
 \frac{\partial A_r}{\partial r}+
 \frac{1}{r}\frac{\partial A_\theta }{\partial \theta}+
 \frac{1}{rsin\theta}\frac{\partial A_\phi}{\partial \phi}$$
 
+## Divergence
+
 ## Divergence Theorem
+
+>[!Note]
+>General formula
+>
+>$$\nabla \cdot A = \frac{1}{h_1 h_2 h_3}[\frac{\partial\ h_2 h_3}{\partial u_1}+\frac{\partial\ h_1 h_3}{\partial u_2}+\frac{\partial\ h_1 h_2}{\partial u_3}]A$$
+>
 
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
 
