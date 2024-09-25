@@ -1,12 +1,33 @@
 # Table of Content
 - [Unit 1](#unit-1)
+	- [Electric Fields](#elctric-fields)
+	- [Electric Flux Density](#electric-flux-density)
+	- [Gradient](#gradient)
+	- [Divergence](#divergence)
+	- [Gauss Law](#gauss-law)
+	- [Electric Potential](#electric-potential)
+	- [Relation b/w E and V]()
+	- [Continuity Equation](#continuity-equation)
+	- [Relaxation Time](#relaxation-time)
+	- [Poisson's Equation](#poissons-equation)
+	- [Laplace Equation](#laplace-equation)
 - [Unit 2](#unit-2)
+	- [Boundary Conditions](#boundary-conditions)
+	- [Drift Velocity](#drift-velocity)
+	- [Ohm's Law](#ohms-law)
+	- [Resistance](#resistance)
+	- [Conductivity](#conductivity)
+	- [Joule's Law](#joules-law)
+	- [Polarisation](#polarisation)
+	- [Capacitance](#capacitance)
 # Unit 1
-
-## Point charge
+## Electric Fields
+### Point charge
 $$D = \frac{Q}{4\pi r^2}a_r$$
 
-## Line charge
+$$E = \frac{Q}{4\pi \varepsilon_o r^2}a_r$$
+
+### Line charge
 
 $$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$
 
@@ -15,7 +36,7 @@ $$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alph
 
 $$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
 
-## Surface charge
+### Surface charge
 - Electric field due to surface charge is
 
 $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
@@ -26,7 +47,7 @@ $$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
 
 - Where $a_n$ is unit vector perpendicular to sheet
 
-## Volume charge
+### Volume charge
 - Electric field due to volume charge is
 
 $$E = \int_S \frac{\rho_sdV}{4\pi\varepsilon_0R^2}a_R$$
@@ -40,9 +61,9 @@ $$Q = \rho_v \frac{4}{3}\pi a^3$$
 ## Electric Flux Density
 Also known as Electric Displacement
 
-$$D = \varepsilon_o E$$
+$$\overline{D} = \varepsilon_o \overline{E}$$
 
-$$\psi = \int_S D \cdot dS$$
+$$\Psi = \int_S \overline{D} \cdot d\overline{S}$$
 
 ## Gradient
 
@@ -65,14 +86,13 @@ $$\nabla A =
 
 ## Divergence
 
-## Divergence Theorem
-
 >[!Note]
 >General formula
 >
 >$$\nabla \cdot A = \frac{1}{h_1 h_2 h_3}[\frac{\partial\ h_2 h_3}{\partial u_1}+\frac{\partial\ h_1 h_3}{\partial u_2}+\frac{\partial\ h_1 h_2}{\partial u_3}]A$$
 >
 
+## Divergence Theorem
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
 
 - Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
@@ -125,7 +145,7 @@ $$\int_L E \cdot dl = 0$$
 
 >[!Note]
 >**Stoke's Theorem**
->$$\int \int_S (\overline{\nabla} \times \overline{B} ) . dS = \oint_S B . d\overline{l}$$
+>$$\int \int_S (\overline{\nabla} \times \overline{B} ) . dS = \oint_L B . d\overline{l}$$
 >
 >**Curl**
 >![Picture](../Assets/Curl.png)
@@ -190,6 +210,9 @@ If there is no charge enclosed in the volume :-
 
 $$\nabla^2 V = 0$$
 
+---
+
+# Unit 2
 ## Boundary conditions
 Maxwell's Equations :-
 
@@ -237,13 +260,10 @@ $$D_t = \varepsilon_o E_t = 0$$
 $$D_n = \varepsilon_o E_n = \rho_s$$
 
 
----
-
-# Unit 2
 ## Drift velocity
 $$v_e = -\mu_e \overline{E}$$
 
-## Ohm's law 
+## Ohms law 
 $$R = \frac{V}{I}$$
 
 
@@ -256,7 +276,7 @@ $$R = \frac{l}{\sigma A}$$
 ## Conductivity
 $$G = \frac{\sigma A}{l} = \frac{A}{\rho\ l}$$
 
-## Joule's law
+## Joules law
 $$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
 
 ## Polarisation
