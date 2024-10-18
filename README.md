@@ -2,11 +2,11 @@ This repo contains the digital notes from my semester classes and some more.
 
 # Topics Covered
 ## Semester
-- [CCN](<./College/CCN/Intro.md>) (50%)
-- [EMFT](<./College/EMFT/Intro.md>) (20%)
-- [LIC](<./College/LIC/Intro.md>) (0%)
-- [RISCV](<./College/RISCV/Intro.md>) (75%)
-- [Verification](<./College/Verification/Intro>) (75%)
+- [CCN](sync/College/CCN/README.md) (50%)
+- [EMFT](sync/College/EMFT/README.md) (20%)
+- [LIC](sync/College/LIC/README.md) (0%)
+- [RISCV](sync/College/RISCV/README.md) (75%)
+- [Verification](sync/College/Verification/README.md) (75%)
 
 ## Extras
 - [HLS](<./Extra/HLS/HLS.md>)
