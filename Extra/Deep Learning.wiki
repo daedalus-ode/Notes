@@ -1,0 +1,86 @@
+= Machine learning =
+* Training
+** Creating the model/weights
+** Typically done on GPUs
+* Inferencing
+** Almost any device like MCU, CPU, SoC, FPGA
+
+== Tasks ==
+* Classification
+* Regression
+* Clustering
+* Anamoly detection
+* Dimensionality reduction
+
+= Deep Learning =
+* A subset of Machine learning in which more than 1 layer of neurons are used
+* Perfect for detecting hidden relations between data in large data sets
+* Types
+** Supervised Learning
+** Contains labels that are used for training the model
+* Kinds
+** ANN - Artificial NN
+** CNN - Convulation NN
+*** Good for Image processing
+** R-CNN - Regional CNN
+*** Good for Object detection
+** RNN - Recurrent NN
+*** Good for NLP
+	  
+= Neuron =
+Parts
+* Linear function of weighted sum and a constant bias
+* Non-linear activation function
+** ReLU
+** ReLU6
+** Leaky ReLU
+** Logistic/ Sigmoid
+
+= CNN =
+* Based on the principle of convolving a convolution filter/kernel with the input layer
+* The output of 1 layer of convultion is a feature map
+
+= Open Source Training Frameworks =
+* Caffe
+* Caffe2
+* TensorFlow
+* Cognitive toolbox
+* Torch/ Pytorch
+* Mxnet
+* theano
+* Keras
+
+= Edge Computing Tool Flow =
+* Training - Caffe, Tensorflow, etc
+* Format Conversion 
+** Convert trained weights into vendor specifications
+* Weight footprint management (Limited memory on edge)
+** Pruning
+*** setting near-zero weights to zero
+*** Very less loss in accuracy of model
+*** Can be retrained using the sparse weights to give better accuracy
+** Quantisation
+*** replacing 32 floats weights to 8 bit integers
+** Compression
+*** Storing sparse weight matrix in compressed format
+* Engine specific optimisations
+** Operation fusing
+** Memory optimisation
+
+= Advantages of FPGAs =
+* High throughput and low latency vs CPU/GPU
+* Can accelerate performance critical functions, not just AI
+* Can update the architecture
+
+= Vitis AI =
+* Frameworks - TF, Caffe, Pytorch
+* Development Kit
+** Optimiser
+*** Performs Pruning (FP32 -> FP32)
+** Quantiser
+*** Quantisation (FP32 -> INT8)
+** Compiler
+*** Optimise for FPGAs
+** Library
+*** Inference Engine, AI runtime, DPU (Deep Learning PU)
+** Profiler
