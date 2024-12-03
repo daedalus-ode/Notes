@@ -38,7 +38,8 @@
 ## Bio Savarts law
 ### Differential
 $$d\overline{H} = \frac{I}{4\pi} \frac{d\overline{L}\times\overline{r}}{|r|^3}$$
->[!Note] Remember
+>[!note]
+> #### Remember
 >- Cartesian
 >$$d\overline{L} = dxa_x + dya_y + dza_z$$
 >- Cylindrical
