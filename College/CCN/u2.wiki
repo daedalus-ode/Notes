@@ -1,6 +1,10 @@
 = Unit 2 =
 
 - [ ] [Chatgpt link](https://chatgpt.com/share/66efee7e-5a90-800f-a150-681efc0b6a91 )
+- [ ] TCP Congestion management
+- [ ] BGR vs SR Comparison
+- [ ] Graphs
+	- [ ] TCP
 
 == TCP ==
 * Transmission control protocol
@@ -349,6 +353,7 @@ The network layer prepares datagrams by inserting IP header
 ** Forwarding datagrams 
 ** Switching operation within a router
 ** Routing in the internet
+
 === IPv4 ===
 
 ==== Datagram Format ====

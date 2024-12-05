@@ -1,6 +1,13 @@
 = U1 =
 
 == Terms ==
+* IETF - Internet Engineering Task Force
+* ICANN - Internet Corporation for Assigned Names and Numbers
+* IANA - Internet Assigned Numbers Authority
+* IAB - Internet Activities Board
+* NSF - National Science Foundation
+* NASS - Network Attached Storage Service
+* RFC - Request For Comments
 * Computer Network - hosts interconnected through communication links and packet switches
 * Internet - computer network that interconnects wider devices around the world
 * ISP - business entity which provides internet access to end-systems
