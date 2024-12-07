@@ -33,5 +33,4 @@
 	- $vlmax(sew, lmul) = \frac{VLEN}{sew} * lmul$
 
 ## Instructions
-- `vadd.vv v5, v4, v2`
 ![Picture](<../Assets/vadd.png>)
