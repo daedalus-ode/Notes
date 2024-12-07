@@ -55,7 +55,7 @@
 Qs. Divide 7/2
 `111`/`010`
 
-| Iteration | Action                                                                | Remainder | Divisor     | Rem register |
-| --------- | ----------------------------------------------------------------- | --------- | ----------- | ------------ |
-| 0         | initia                                                                | 0000      | 0010\| 0000 | 0000 0111    |
-| 1. rem = rem - divisor<br>2. rem < 0<br>    rem = rem + 2<br>     rem + 2<br>     |           |             |              |
+| Iteration                                                                     | Action | Remainder | Divisor     | Rem register |
+| ----------------------------------------------------------------------------- | ------ | --------- | ----------- | ------------ |
+| 0                                                                             | initia | 0000      | 0010\| 0000 | 0000 0111    |
+| 1. rem = rem - divisor<br>2. rem < 0<br>    rem = rem + 2<br>     rem + 2<br> |        |           |             |              |

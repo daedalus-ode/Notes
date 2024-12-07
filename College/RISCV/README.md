@@ -1,19 +1,19 @@
 # Computer organization and Design
+
 # Chapters
-1. [Instructions ISAs](<./Instructions (ISAs).md>)
-2. Data flow model (micro-arch.)
-3. Arithmetic for computer
-4. Computer abstraction
-## TB
-Computer organisation and Design - RISCV edition
 
-## Plans
-0-5 - Assembly
-5-... - RISCV implementation
+1. [Unit 1](<./Instructions (ISAs).md>) - Instructions
+2. [Unit 2](<./Data Flow Model.md>) - Data flow model (micro-arch.)
+3. [Unit 3](./Arithmetics.md) - Arithmetic for computer
+   - [Floating Point](<./Floating Point.md>)
+4. [Unit 4](<./Performance and Ideas.md>) - Computer abstraction
+   - [Vector Extension](<./Vector Extension.md>)
 
-## Assignment
-5 stage pipelined architecture
+# Miscelaneous
+
+- [Codes](<./COD Codes.md>)
 
 # Links
+
 - [Resources](./Resources.md)
-- [Linux Foundation Course Notes](<./LFD115x.md>)
+- [Linux Foundation Course Notes](./LFD115x.md)
