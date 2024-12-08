@@ -1,18 +1,29 @@
 # Table of Content
 - [Unit 1](#unit-1)
-	- [Electric Fields](#elctric-fields)
-	- [Electric Flux Density](#electric-flux-density)
+	- [Coulombs Law](#coulombs-law) *
+	- [Electric Fields](#elctric-fields) *
+		- [Point Charge](#point-charge)
+		- [Line charge](#line-charge)
+		- [Surface charge](#surface-charge)
+		- [Volume charge](#volume-charge)
+	- [Electric Flux Density](#electric-flux-density) *
 	- [Gradient](#gradient)
+		- [Cartesian](#cartesian)
+		- [Cylindrical](#cylindrical)
+		- [Spherical](#spherical)
 	- [Divergence](#divergence)
-	- [Gauss Law](#gauss-law)
-	- [Electric Potential](#electric-potential)
-	- [Relation b/w E and V]()
-	- [Continuity Equation](#continuity-equation)
-	- [Relaxation Time](#relaxation-time)
+		- [Divergence Theorem](#divergence-theorem)
+	- [Gauss Law](#gauss-law) *
+	- Uniformly Charged Sphere *
+	- [Applying Gauss law](#applying-gauss-law)
+	- [Electric Potential](#electric-potential) *
+	- [Relation b/w E and V](#relation-between-e-and-v) *
+	- [Continuity Equation](#continuity-equation) *
+	- [Relaxation Time](#relaxation-time) *
 	- [Poisson's Equation](#poissons-equation)
 	- [Laplace Equation](#laplace-equation)
 - [Unit 2](#unit-2)
-	- [Boundary Conditions](#boundary-conditions)
+	- [Boundary Conditions](#boundary-conditions) *
 	- [Drift Velocity](#drift-velocity)
 	- [Ohm's Law](#ohms-law)
 	- [Resistance](#resistance)
@@ -20,7 +31,19 @@
 	- [Joule's Law](#joules-law)
 	- [Polarisation](#polarisation)
 	- [Capacitance](#capacitance)
+		- [Parallel Plate](#parallel-plate)
+		- [Coaxial](#coaxial)
+		- [Spherical](#spherical)
+		- [Configurations](#configurations)
+			- [Parallel](#parallel)
+			- [Series](#series)
+
+`* - Important Derivations`
+
 # Unit 1
+## Coulombs Law
+$$F = \frac{1}{4\pi \varepsilon} \cdot \frac{Q_1 Q_2}{r^2}$$
+
 ## Electric Fields
 ### Point charge
 $$D = \frac{Q}{4\pi r^2}a_r$$
@@ -92,7 +115,7 @@ $$\nabla A =
 >$$\nabla \cdot A = \frac{1}{h_1 h_2 h_3}[\frac{\partial\ h_2 h_3}{\partial u_1}+\frac{\partial\ h_1 h_3}{\partial u_2}+\frac{\partial\ h_1 h_2}{\partial u_3}]A$$
 >
 
-## Divergence Theorem
+### Divergence Theorem
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
 
 - Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
@@ -138,7 +161,7 @@ $$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$
 
 $$V = - \int_\infty^r E \cdot dl$$
 
-## Relation b/w E and V
+## Relation between E and V
 - For a closed loop:- 
 
 $$\int_L E \cdot dl = 0$$
@@ -314,7 +337,7 @@ $$C = \frac{2\pi \varepsilon L}{ln\frac{b}{a}}$$
 $$C = \frac{4\pi\varepsilon}{\frac{1}{a} - \frac{1}{b}}$$
 
 ### Configurations
-#### Parrallel
+#### Parallel
 $$C = C_1 + C_2$$
 
 #### Series

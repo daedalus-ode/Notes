@@ -1,39 +1,45 @@
 # Table of Contents
 - [Part 1](#part-1)
-	- [Bio Savarts law](#bio-savarts-law)
+	- [Bio Savarts law](#bio-savarts-law) *
 	- [Magnetic Field Intensities](#magnetic-field-intensities)
 	- [Amperes Law](#amperes-law)
 		- [Applications](#applications)
 			- [Infinite Line Current](#infinite-line-current)
-			- [Infinite Sheet of current](#infinite-sheet-of-current)
-			- [Infinite Length Coaxial Transmission Line](#infinite-length-coaxial-transmission-line)
+			- [Infinite Sheet of current](#infinite-sheet-of-current) *
+			- [Infinite Length Coaxial Transmission Line](#infinite-length-coaxial-transmission-line) *
 				- [Hollow Cylinder](#hollow-cylinder)
 				- [Solid Cylinder](#solid-cylinder)
 				- [Coaxial Cable](#coaxial-cable)
 			- [Toroid](#toroid)
-	- [Stoke Law](#stoke-law)
+	- [Stoke Law](#stoke-law) *
 	- [Magnetic Field Density](#magnetic-field-density)
 	- [Maxwells Equations](#maxwells-equations)
 	- [Magnetic Boundary Conditions](#magnetic-boundary-conditions)
-	- [Force due to Magnetic Fields](#force-due-to-magnetic-fields)
+	- [Force due to Magnetic Fields](#force-due-to-magnetic-fields) *
 		- [Force on Current Element](#force-on-current-element)
 		- [Force on charged particle](#force-on-charged-particle)
 		- [Force between Current Elements](#force-between-current-elements)
-	- [Faradays Law](#faradays-law)
+	- [Displacment Current](#displacment-current) *
+	- [Faradays Law](#faradays-law) *
 		- [Stationary loop Varying magnetic Field](#stationary-loop-varying-magnetic-field)
 		- [Moving loop Static magnetic Field](#moving-loop-static-magnetic-field)
 		- [Moving loop varying Magnetic Field](#moving-loop-varying-magnetic-field)
 - [Part 2](#part-2)
 	- [Phasors](#phasors)
 	- [Maxwell equations](#maxwell-equations)
-	- [Wave Propogation](#wave-propogation)
+	- [Wave Propogation](#wave-propogation) *
 		- [Lossy Dielectrics](#lossy-dielectrics)
 		- [Lossless Dielectrics](#lossless-dielectrics)
 		- [Good Conductors](#good-conductors)
-	- [Wave Polarization](#wave-polarization)
+			- [Plane Waves](#plane-waves) *
+	- [Skin Effect](#skin-effect) *
+	- [Wave Polarization](#wave-polarization) *
 		- [Linear](#linear)
 		- [Circular](#circular)
 		- [Elliptical](#elliptical)
+
+`* - Important Derivations`
+
 # Part 1
 ## Bio Savarts law
 ### Differential
@@ -73,6 +79,7 @@ $$\overline{H} = nI a_y$$
 ### Force on Current Element
 ### Force on charged particle
 ### Force between Current Elements
+## Displacment Current
 ## Faradays Law
 ### Stationary loop Varying magnetic Field
 ### Moving loop Static magnetic Field
@@ -90,6 +97,8 @@ $$\overline{H} = nI a_y$$
 ### Lossless Dielectrics
 #### $\theta_\eta$
 ### Good Conductors
+#### Plane Waves
+## Skin Effect
 ## Wave Polarization
 ### Linear
 ### Circular
