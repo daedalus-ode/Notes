@@ -105,12 +105,12 @@ $$\Psi = \int_S \overline{B} \cdot d \overline{S}$$
 $$\overline{J_d} = \varepsilon \frac{d\overline{E}}{dt}$$
 ## Maxwells Equations
 
-| Name                               | Integral Form                                                                        | Point Form                                                 |
-| ---------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| Ampere's Law                       | $$\oint \overline{H} \cdot d\overline{l} = \int_S \overline{J} \cdot d\overline{S}$$ | $$\nabla \times \overline{H} = \overline{J}$$              |
-| Gauss' Law                         | $$\oint \overline{D} \cdot d \overline{S} = \int_V \rho_v dV$$                       | $$\nabla \cdot \overline{E} = \frac{\rho_v}{\varepsilon}$$ |
-| None Existence of magnetic dipoles | $$\oint_S \overline{B} \cdot d \overline{S} = 0$$                                    | $$\nabla \cdot \overline{B} = 0$$                          |
-| Conservative Electric Fields       | $$\int \overline{E} \cdot d\overline{l} = 0$$                                        | $$\nabla \times \overline{E} = -\frac{d\overline{B}}{dt}$$ |
+| Name                               | Integral Form                                                                        | Point Form                                                                           |
+| ---------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| Ampere's Law                       | $$\oint \overline{H} \cdot d\overline{l} = \int_S \overline{J} \cdot d\overline{S}$$ | $$\nabla \times \overline{H} = \overline{J} + \varepsilon \frac{d\overline{E}}{dt}$$ |
+| Gauss' Law                         | $$\oint \overline{D} \cdot d \overline{S} = \int_V \rho_v dV$$                       | $$\nabla \cdot \overline{E} = \frac{\rho_v}{\varepsilon}$$                           |
+| None Existence of magnetic dipoles | $$\oint_S \overline{B} \cdot d \overline{S} = 0$$                                    | $$\nabla \cdot \overline{B} = 0$$                                                    |
+| Faraday's Law                      | $$\int \overline{E} \cdot d\overline{l} = 0$$                                        | $$\nabla \times \overline{E} = -\frac{d\overline{B}}{dt}$$                           |
 ## Magnetic Boundary Conditions
 $$\mu_1 \overline{H}_{1n} = \mu_2 \overline{H}_{2n}\ \leftarrow or\rightarrow\ \overline{B}_{1n} = \overline{B}_{2n}$$
 
@@ -153,18 +153,81 @@ $$V_{emf} = \oint \overline{E} \cdot d\overline{l} = -\int_S \frac{d\overline{B}
 ---
 # Part 2
 ## Phasors
+$$z = a + ib \rightarrow r\angle \theta = re^{j\theta}$$
+
+$$X = cos(\omega t - \beta x) = Re\{\overline{X}_oe^{J\omega t}\}$$
+
+- We can define the phasor $X_s$ such that
+
+$$\overline{X} (x,y,z,t) = Re\{\overline{X}_s(x,y,z)\ e^{J\omega t}\}$$
 ## Maxwell equations
-## Wave Propogation
+
+| Name                               | Phasor Form                                                               |
+| ---------------------------------- | ------------------------------------------------------------------------- |
+| Ampere's Law                       | $$\nabla \times \overline{H}_s = \overline{J}_s + j\omega\overline{D}_s$$ |
+| Gauss' Law                         | $$\nabla \cdot \overline{E}_s = \frac{\rho_v}{\varepsilon}$$              |
+| None Existence of magnetic dipoles | $$\nabla \cdot \overline{B}_s = 0$$                                       |
+| Faraday's Law                      | $$\nabla \times \overline{E}_s = -J\omega \overline{B}_s$$                |
+## Wave Propogation #todo
+- General Wave Equation:
+$$\frac{d^2X}{dt^2} - \frac{1}{\mu \varepsilon} \frac{d^2X}{dx^2} = 0$$
+
+- Solution to Wave Equation:
+$$X\ (x,y,z,t)= A_o e^{-\alpha x} cos (\omega t -\beta x) =\ Re\{\overline{X}_s(x,y,z)\ e^{J\omega t}\}$$
 ### Lossy Dielectrics
-#### $\alpha$
-#### $\beta$
-#### $\eta$
+- Wave Equation:
+$$\nabla^2\ \overline{E}_s\ -\ \gamma^2\ \overline{E}_s = 0$$
+
+	- Where $\gamma^2 = J\omega\mu(\sigma + J\omega\varepsilon)$
+	- $\gamma = \alpha + J\beta$
+		- $\gamma$ - Propogation constant
+		- $\beta$ - Phase shift constant
+		- $\alpha$ - Attenuation constant
+#### $\alpha$ - Attenuation constant
+$$\alpha = \omega \sqrt{\frac{\mu\varepsilon}{2}\Bigg[\sqrt{1+(\frac{\sigma}{\omega\epsilon})^2}-1 \Bigg] }$$
+#### $\beta$ - Phase shift constant
+$$\beta = \omega \sqrt{\frac{\mu\varepsilon}{2}\Bigg[\sqrt{1+(\frac{\sigma}{\omega\epsilon})^2}+1 \Bigg] }$$
+
+$$\beta = \frac{\omega \mu \sigma}{2\alpha}$$
+#### $\eta$ - Intrinsic Impedance
+$$\eta = \sqrt{\frac{J\omega\mu}{\sigma + J\omega\varepsilon}}$$
+#### $\theta_{\eta}$ - Phase
+$$\theta_{\eta} = \frac{1}{2}tan^{-1}\big(\frac{\sigma}{\omega\varepsilon}\big)$$
+>[!note]
+>- $\overline{E}$ leads $\overline{H}$ by angle $\theta_{\eta}$
+>- $\overline{H}$ lags $\overline{E}$ by angle $\theta_{\eta}$
+
+### Plane Waves in Free Space
+- We know that $\gamma^2 = J\omega\mu(\sigma + J\omega\varepsilon)$
+- For free space $\sigma = 0$, therefore:
+$$\gamma = J\omega \sqrt{\mu_o\varepsilon_o}$$
+
+- $\alpha = 0$, therefore **no attenuation**
+$$\beta = \omega \sqrt{\mu_o \varepsilon_o} = \frac{\omega}{c}$$
+
+- $\eta_o = \sqrt{\frac{\mu_o}{\varepsilon_o}} = 120\pi$
+- $\overline{E}$ and $\overline{H}$ are in phase
 ### Lossless Dielectrics
-#### $\theta_\eta$
+- For free space $\sigma = 0$, therefore:
+$$\gamma = J\omega \sqrt{\mu\varepsilon}$$
+
+- And $\eta = \sqrt{\frac{\mu}{\varepsilon}}$
+- And $\beta = \omega\sqrt{\mu\varepsilon}$, therefore:
+$$c = \frac{1}{\sqrt{\mu_o\mu_r\varepsilon_o\varepsilon_r}}$$
+
 ### Good Conductors
 #### Plane Waves
 ## Skin Effect
+- Skin depth / penetration is the distance travelled by EM wave getting attenuated by a factor e
+$$\delta = \frac{1}{\alpha}$$
+
+- For good conductors,
+$$\delta = \frac{1}{\sqrt{\pi\rho\mu\sigma}}$$
+
+- $\delta$ is very small for good conductors $\therefore$ waves dies down at high rate
+- Very high frequency (RF range) comes from good conductors, $\delta$ is small at high frequency $\therefore$ **Skin effect**
 ## Wave Polarization
 ### Linear
+$$\Delta \phi = \phi_y - \phi_x = 0$$
 ### Circular
 ### Elliptical

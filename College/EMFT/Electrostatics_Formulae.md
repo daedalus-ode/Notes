@@ -225,8 +225,11 @@ $$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$
 >\nabla^2 A = \frac{1}{h_1 h_2 h_3}\ [\ 
 >\frac{\partial}{\partial a_1}\ (\frac{h_2 h_3}{h_1}\frac{\partial A}{\partial a_1})+
 >\frac{\partial}{\partial a_2}\ (\frac{h_1 h_3}{h_2}\frac{\partial A}{\partial a_2})+
->\frac{\partial}{\partial a_3}\ (\frac{h_1 h_2}{h_3}\frac{\partial A}{\partial a_2})
+>\frac{\partial}{\partial a_3}\ (\frac{h_1 h_2}{h_3}\frac{\partial A}{\partial a_3})
 >\ ]$$
+>- Cartesian $(x,y,z)$ - $(h1,h2,h3) = (1,1,1)$
+>- Cylindrical $(\rho,\phi,z)$ - $(h1,h2,h3) = (1,\rho,1)$
+>- Spherical $(r, \theta, \phi)$ - $(h1,h2,h3) = (1,r,r sin(\theta))$
 > 
 ## Laplace Equation
 If there is no charge enclosed in the volume :-

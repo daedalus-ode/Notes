@@ -4,8 +4,8 @@
 - Magnetostatics
 
 # Formula sheet
-- [Electrostatics_Formulae](Electrostatics_Formulae.md)
-- [Magnetism_Formulae](Magnetism_Formulae.md)
+- [Electrostatics Formulae Sheet](Electrostatics_Formulae.md)
+- [Magnetism Formulae Sheet](Magnetism_Formulae.md)
 
 # TB
 - Fundamentals of Electromagnetism by Sadiku and Kulkarni
