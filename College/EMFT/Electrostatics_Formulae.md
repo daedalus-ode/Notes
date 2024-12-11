@@ -130,7 +130,7 @@ $$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$
 
 - Comparing the equations :- We get Maxwell's 1st equation 
 
-$$\rho_v = \nabla \cdot D$$
+$$\rho_V = \nabla \cdot D$$
 
 ### Applying Gauss law
 - Infinite line charge
