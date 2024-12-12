@@ -274,7 +274,9 @@ $$E_x = E_{ox} cos(\omega t - \beta z)$$
 $$H_y = \frac{E_{ox}}{\eta} cos(\omega t - \beta z)$$
 
 - Power density:
+
 $$P_z = \frac{E^2_{ox}}{\eta} cos^2(\omega t - \beta z)$$
 
 - For lossy dielectric, power density in phasor form
-$$<P_z> = \frac{1}{2}\frac{E^2_{ox}}{|\eta|}\ e^{-2az} cos \theta_\eta$$
+
+$$P_z = \frac{1}{2}\frac{E^2_{ox}}{|\eta|}\ e^{-2az} cos \theta_\eta$$

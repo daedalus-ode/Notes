@@ -42,7 +42,7 @@
 
 # Unit 1
 ## Coulombs Law
-$$F = \frac{1}{4\pi \varepsilon} \cdot \frac{Q_1 Q_2}{r^2}$$
+$$F = \frac{1}{4\pi \varepsilon} \cdot \frac{Q_1 Q_2}{r^2}\hat{a}_r$$
 
 ## Electric Fields
 ### Point charge
