@@ -6,6 +6,7 @@
 		- [Line charge](#line-charge)
 		- [Surface charge](#surface-charge)
 		- [Volume charge](#volume-charge)
+		- [Uniformly Charged Sphere](#volume-charge) *
 	- [Electric Flux Density](#electric-flux-density) *
 	- [Gradient](#gradient)
 		- [Cartesian](#cartesian)
@@ -14,7 +15,6 @@
 	- [Divergence](#divergence)
 		- [Divergence Theorem](#divergence-theorem)
 	- [Gauss Law](#gauss-law) *
-	- Uniformly Charged Sphere *
 	- [Applying Gauss law](#applying-gauss-law)
 	- [Electric Potential](#electric-potential) *
 	- [Relation b/w E and V](#relation-between-e-and-v) *
@@ -48,7 +48,7 @@ $$F = \frac{1}{4\pi \varepsilon} \cdot \frac{Q_1 Q_2}{r^2}$$
 ### Point charge
 $$D = \frac{Q}{4\pi r^2}a_r$$
 
-$$E = \frac{Q}{4\pi \varepsilon_o r^2}a_r$$
+$$E = \frac{Q}{4\pi \varepsilon r^2}a_r$$
 
 ### Line charge
 
@@ -81,6 +81,7 @@ $$E = \frac{Q}{4\pi \varepsilon_o} z^2$$
 
 $$Q = \rho_v \frac{4}{3}\pi a^3$$
 
+$$\overline{E}_z = \frac{\rho_v}{4\pi \varepsilon_o z^2} \frac{4\pi a^3}{3}$$
 ## Electric Flux Density
 Also known as Electric Displacement
 

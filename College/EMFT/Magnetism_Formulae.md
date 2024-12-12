@@ -168,21 +168,25 @@ $$\overline{X} (x,y,z,t) = Re\{\overline{X}_s(x,y,z)\ e^{J\omega t}\}$$
 | Gauss' Law                         | $$\nabla \cdot \overline{E}_s = \frac{\rho_v}{\varepsilon}$$              |
 | None Existence of magnetic dipoles | $$\nabla \cdot \overline{B}_s = 0$$                                       |
 | Faraday's Law                      | $$\nabla \times \overline{E}_s = -J\omega \overline{B}_s$$                |
-## Wave Propogation #todo
+## Wave Propagation #todo
 - General Wave Equation:
-$$\frac{d^2X}{dt^2} - \frac{1}{\mu \varepsilon} \frac{d^2X}{dx^2} = 0$$
+$$\frac{d^2X}{dt^2} - u^2 \nabla^2X = 0$$
+
+- Or
+$$\frac{d^2E}{dt^2} - \frac{1}{\mu \varepsilon} \nabla^2E = 0$$
 
 - Solution to Wave Equation:
 $$X\ (x,y,z,t)= A_o e^{-\alpha x} cos (\omega t -\beta x) =\ Re\{\overline{X}_s(x,y,z)\ e^{J\omega t}\}$$
+
+$$\beta = \frac{\omega}{u} = \frac{2\pi}{\lambda}$$
 ### Lossy Dielectrics
 - Wave Equation:
 $$\nabla^2\ \overline{E}_s\ -\ \gamma^2\ \overline{E}_s = 0$$
 
-	- Where $\gamma^2 = J\omega\mu(\sigma + J\omega\varepsilon)$
-	- $\gamma = \alpha + J\beta$
-		- $\gamma$ - Propogation constant
-		- $\beta$ - Phase shift constant
-		- $\alpha$ - Attenuation constant
+#### $\gamma$ - Propagation constant
+$$\gamma = \sqrt{J\omega\mu(\sigma+j\omega\varepsilon)}$$
+
+- $\gamma = \alpha + j\beta$
 #### $\alpha$ - Attenuation constant
 $$\alpha = \omega \sqrt{\frac{\mu\varepsilon}{2}\Bigg[\sqrt{1+(\frac{\sigma}{\omega\epsilon})^2}-1 \Bigg] }$$
 #### $\beta$ - Phase shift constant
@@ -191,6 +195,10 @@ $$\beta = \omega \sqrt{\frac{\mu\varepsilon}{2}\Bigg[\sqrt{1+(\frac{\sigma}{\ome
 $$\beta = \frac{\omega \mu \sigma}{2\alpha}$$
 #### $\eta$ - Intrinsic Impedance
 $$\eta = \sqrt{\frac{J\omega\mu}{\sigma + J\omega\varepsilon}}$$
+
+$$\eta = |\eta|e^{J\theta_\eta}$$
+
+$$|\eta| = \frac{\sqrt{\frac{\mu}{\varepsilon}}}{\Big[1+{(\frac{\sigma}{\omega\varepsilon})}^2\Big]^{\frac{1}{4}}}$$
 #### $\theta_{\eta}$ - Phase
 $$\theta_{\eta} = \frac{1}{2}tan^{-1}\big(\frac{\sigma}{\omega\varepsilon}\big)$$
 >[!note]
@@ -228,6 +236,45 @@ $$\delta = \frac{1}{\sqrt{\pi\rho\mu\sigma}}$$
 - Very high frequency (RF range) comes from good conductors, $\delta$ is small at high frequency $\therefore$ **Skin effect**
 ## Wave Polarization
 ### Linear
+$$E_x = E_{ox} cos(\omega t - \beta z)$$
+
+$$E_y = E_{oy} cos(\omega t - \beta z)$$
+
+$$z = 0$$
+
 $$\Delta \phi = \phi_y - \phi_x = 0$$
+
+$$E_{ox} = E_{oy} \rightarrow \theta = 45^o$$
+
+$$E_{ox} \neq E_{oy} \rightarrow \theta = tan^{-1}\Big(\frac{E_{oy}}{E_{ox}}\Big)$$
 ### Circular
+$$E_x = E_{ox} cos(\omega t - \beta z)$$
+
+$$E_y = E_{oy} cos(\omega t - \beta z - \frac{\pi}{2})$$
+
+$$E_{ox} = E_{oy}$$
+
+$$\Delta \phi = \phi_y - \phi_x = \frac{\pi}{2}$$
 ### Elliptical
+$$E_x = E_{ox} cos(\omega t - \beta z)$$
+
+$$E_y = E_{oy} sin(\omega t - \beta z)$$
+
+$$E_{ox} \ne E_{oy}$$
+
+$$\Delta \phi = \phi_y - \phi_x = \frac{\pi}{2}$$
+
+$${\Big(\frac{E_x}{E_{ox}}\Big)}^2 + {\Big(\frac{E_y}{E_{oy}}\Big)}^2 = 1$$
+## Poynting Theorem
+$$\overline{P} = \overline{E} \times \overline{H}$$
+
+- For perfect dielectric: 
+$$E_x = E_{ox} cos(\omega t - \beta z)$$
+
+$$H_y = \frac{E_{ox}}{\eta} cos(\omega t - \beta z)$$
+
+- Power density:
+$$P_z = \frac{E^2_{ox}}{\eta} cos^2(\omega t - \beta z)$$
+
+- For lossy dielectric, power density in phasor form
+$$<P_z> = \frac{1}{2}\frac{E^2_{ox}}{|\eta|}\ e^{-2az} cos \theta_\eta$$
