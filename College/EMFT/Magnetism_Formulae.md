@@ -110,7 +110,7 @@ $$\overline{J_d} = \varepsilon \frac{d\overline{E}}{dt}$$
 | Ampere's Law                       | $$\oint \overline{H} \cdot d\overline{l} = \int_S \overline{J} \cdot d\overline{S}$$ | $$\nabla \times \overline{H} = \overline{J} + \varepsilon \frac{d\overline{E}}{dt}$$ |
 | Gauss' Law                         | $$\oint \overline{D} \cdot d \overline{S} = \int_V \rho_v dV$$                       | $$\nabla \cdot \overline{E} = \frac{\rho_v}{\varepsilon}$$                           |
 | None Existence of magnetic dipoles | $$\oint_S \overline{B} \cdot d \overline{S} = 0$$                                    | $$\nabla \cdot \overline{B} = 0$$                                                    |
-| Faraday's Law                      | $$\int \overline{E} \cdot d\overline{l} = 0$$                                        | $$\nabla \times \overline{E} = -\frac{d\overline{B}}{dt}$$                           |
+| Faraday's Law                      | $$\int \overline{E} \cdot d\overline{l} = - \frac{d\Psi}{dt}$$                                        | $$\nabla \times \overline{E} = -\frac{d\overline{B}}{dt}$$                           |
 ## Magnetic Boundary Conditions
 $$\mu_1 \overline{H}_{1n} = \mu_2 \overline{H}_{2n}\ \leftarrow or\rightarrow\ \overline{B}_{1n} = \overline{B}_{2n}$$
 
@@ -168,7 +168,7 @@ $$\overline{X} (x,y,z,t) = Re\{\overline{X}_s(x,y,z)\ e^{J\omega t}\}$$
 | Gauss' Law                         | $$\nabla \cdot \overline{E}_s = \frac{\rho_v}{\varepsilon}$$              |
 | None Existence of magnetic dipoles | $$\nabla \cdot \overline{B}_s = 0$$                                       |
 | Faraday's Law                      | $$\nabla \times \overline{E}_s = -J\omega \overline{B}_s$$                |
-## Wave Propagation #todo
+## Wave Propagation
 - General Wave Equation:
 $$\frac{d^2X}{dt^2} - u^2 \nabla^2X = 0$$
 
