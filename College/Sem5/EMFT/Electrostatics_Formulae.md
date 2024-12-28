@@ -1,4 +1,5 @@
-# Table of Content
+# Electrostatics Formula
+## Table of Content
 - [Unit 1](#unit-1)
 	- [Coulombs Law](#coulombs-law) *
 	- [Electric Fields](#elctric-fields) *
@@ -40,26 +41,26 @@
 
 `* - Important Derivations`
 
-# Unit 1
-## Coulombs Law
+## Unit 1
+### Coulombs Law
 $$F = \frac{1}{4\pi \varepsilon} \cdot \frac{Q_1 Q_2}{r^2}\hat{a}_r$$
 
-## Electric Fields
-### Point charge
+### Electric Fields
+#### Point charge
 $$D = \frac{Q}{4\pi r^2}a_r$$
 
 $$E = \frac{Q}{4\pi \varepsilon r^2}a_r$$
 
-### Line charge
+#### Line charge
 
-$$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_p+sin(\alpha)a_z]d\alpha}$$
+$$E = \frac{-\rho_L}{4\pi\varepsilon_o\rho}\int_{\alpha_1}^{\alpha_2}{[cos(\alpha) a_\rho+sin(\alpha)a_z]d\alpha}$$
 
 - Where $\alpha_1$ and $\alpha_2$ are angles that the line subtends to the point
 - Infinite line charge -
 
 $$E = \frac{\rho_L}{2\pi\varepsilon_o\rho}a_p$$
 
-### Surface charge
+#### Surface charge
 - Electric field due to surface charge is
 
 $$E = \int_S \frac{\rho_sdS}{4\pi\varepsilon_0R^2}a_R$$
@@ -70,7 +71,7 @@ $$E = \frac{\rho_s}{2\varepsilon_0}a_n$$
 
 - Where $a_n$ is unit vector perpendicular to sheet
 
-### Volume charge
+#### Volume charge
 - Electric field due to volume charge is
 
 $$E = \int_S \frac{\rho_sdV}{4\pi\varepsilon_0R^2}a_R$$
@@ -82,33 +83,33 @@ $$E = \frac{Q}{4\pi \varepsilon_o} z^2$$
 $$Q = \rho_v \frac{4}{3}\pi a^3$$
 
 $$\overline{E}_z = \frac{\rho_v}{4\pi \varepsilon_o z^2} \frac{4\pi a^3}{3}$$
-## Electric Flux Density
+### Electric Flux Density
 Also known as Electric Displacement
 
 $$\overline{D} = \varepsilon_o \overline{E}$$
 
 $$\Psi = \int_S \overline{D} \cdot d\overline{S}$$
 
-## Gradient
+### Gradient
 
 $$\nabla A = lim_{\Delta v \rightarrow 0} \frac{\int_S A \cdot dS}{\Delta V}$$
 
-### Cartesian
+#### Cartesian
 
 $$\nabla A = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}$$
 
-### Cylindrical
+#### Cylindrical
 
 $$\nabla A = \frac{\partial A_\rho}{\partial \rho}+\frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi}+\frac{\partial A_z}{\partial z}$$
 
-### Spherical
+#### Spherical
 
 $$\nabla A = 
 \frac{\partial A_r}{\partial r}+
 \frac{1}{r}\frac{\partial A_\theta }{\partial \theta}+
 \frac{1}{rsin\theta}\frac{\partial A_\phi}{\partial \phi}$$
 
-## Divergence
+### Divergence
 
 >[!Note]
 >General formula
@@ -116,12 +117,12 @@ $$\nabla A =
 >$$\nabla \cdot A = \frac{1}{h_1 h_2 h_3}[\frac{\partial\ h_2 h_3}{\partial u_1}+\frac{\partial\ h_1 h_3}{\partial u_2}+\frac{\partial\ h_1 h_2}{\partial u_3}]A$$
 >
 
-### Divergence Theorem
+#### Divergence Theorem
 $$\int_S A \cdot dS = \int_V \nabla \cdot A\ dV$$ 
 
 - Total outward flux of a vector field through closed surface S is same as volume integral of the divergence of A
 
-## Gauss law
+### Gauss law
 
 $$\Psi = \int_S D \cdot dS = Q_{enclosed} = \int_V \rho_v\ dV$$
 
@@ -133,7 +134,7 @@ $$\int_S D \cdot dS  = \int_V \nabla \cdot D\ dV$$
 
 $$\rho_V = \nabla \cdot D$$
 
-### Applying Gauss law
+#### Applying Gauss law
 - Infinite line charge
 
 $$\rho_L l = Q = \int_S D \cdot dS = D_\rho \int_S dS = D_\rho\ 2\pi\ \rho\ l$$
@@ -154,7 +155,7 @@ $$D =
 \frac{a^3}{3\ r^2}\ \rho_o\ a_r & \text{if } r \ge a
 \end{cases}$$
 
-## Electric Potential
+### Electric Potential
 
 $$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$
 
@@ -162,7 +163,7 @@ $$V_{BA} = \frac{W}{Q} = - \int_A^B E \cdot dl$$
 
 $$V = - \int_\infty^r E \cdot dl$$
 
-## Relation between E and V
+### Relation between E and V
 - For a closed loop:- 
 
 $$\int_L E \cdot dl = 0$$
@@ -182,7 +183,7 @@ $$\int_L E \cdot dl = \int_S(\nabla \times E) \cdot dS = 0\ (or)\ \nabla \times 
  
  $$E = -\nabla V$$
  
-## Continuity Equation
+### Continuity Equation
 
 $$I_{out} = \oint J.dS = -\frac{dQ_{in}}{dt}$$
 
@@ -208,13 +209,13 @@ $$\nabla .J = -\frac{\partial \rho_v}{\partial t}$$
 > $\nabla .J =0$
 > 
 
-## Relaxation time
+### Relaxation time
 
 $$\rho_v = \rho_{vo}\ e^{-\frac{t}{T_r}}
 \text{ where } T_r = \frac{\varepsilon}{\sigma}
 $$
 
-## Poisson's Equation
+### Poisson's Equation
 
 $$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$
 
@@ -232,22 +233,22 @@ $$\nabla^2 V = -\frac{\rho_v}{\varepsilon_o}$$
 >- Cylindrical $(\rho,\phi,z)$ - $(h1,h2,h3) = (1,\rho,1)$
 >- Spherical $(r, \theta, \phi)$ - $(h1,h2,h3) = (1,r,r sin(\theta))$
 > 
-## Laplace Equation
+### Laplace Equation
 If there is no charge enclosed in the volume :-
 
 $$\nabla^2 V = 0$$
 
 ---
 
-# Unit 2
-## Boundary conditions
+## Unit 2
+### Boundary conditions
 Maxwell's Equations :-
 
 $$\oint_S \overline{D} . d\overline{S} = Q_{enc} \rightarrow 1^{st} \text{ Equation}$$
 
 $$\oint_L \overline{E}.d \overline{l} = 0 \rightarrow 2^{nd} \text{ Equation}$$
 
-### Dielectric - Dielectric
+#### Dielectric - Dielectric
 ![Picture](<../Assets/dielec-dielec.png>)
 
 $$\varepsilon_1 = \varepsilon_o\ \varepsilon_{r1} \text{ (and) } \varepsilon_2 = \varepsilon_o\ \varepsilon_{r2}$$ 
@@ -274,39 +275,39 @@ $$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\varepsilon_1}{\varepsilon_2} = \f
 
 - $\theta_1$, $\theta_2$ -> angle of electric field with normal to surface in each medium
 
-### Conductor - Dielectric
+#### Conductor - Dielectric
 
 $$E_t = 0$$
 
 $$D_n = \rho_s$$
 
-### Conductor - Free space
+#### Conductor - Free space
 
 $$D_t = \varepsilon_o E_t = 0$$
 
 $$D_n = \varepsilon_o E_n = \rho_s$$
 
 
-## Drift velocity
+### Drift velocity
 $$v_e = -\mu_e \overline{E}$$
 
-## Ohms law 
+### Ohms law 
 $$R = \frac{V}{I}$$
 
 
 - Point form
 $$\overline{J} = \sigma \overline{E}$$
 
-## Resistance
+### Resistance
 $$R = \frac{l}{\sigma A}$$
 
-## Conductivity
+### Conductivity
 $$G = \frac{\sigma A}{l} = \frac{A}{\rho\ l}$$
 
-## Joules law
+### Joules law
 $$P \text{(power)} = \int_v \overline{J} \cdot \overline{E} dV$$
 
-## Polarisation
+### Polarisation
 $$\overline{D} = \varepsilon_o\overline{E} + \overline{P}$$
 
 - P -> electric polarisation field
@@ -320,30 +321,30 @@ $$\varepsilon_r = \varepsilon_o (1+\chi_e)$$
 - $\chi_e$ -> Susceptibility
 - $\varepsilon_r$ -> relative permeability or dielectric strength
 
-## Capacitance
+### Capacitance
 $$C = \frac{Q}{V}$$
 
 $$RC = \frac{\varepsilon}{\sigma}$$
 
-### Parallel Plate
+#### Parallel Plate
 
 $$C = \frac{Q}{V} = \frac{\varepsilon S}{d}$$
 
 $$W_E = \frac{1}{2}\int_v\varepsilon E^2 dv= \frac{1}{2} C V^2 = \frac{1}{2}QV = \frac{Q^2}{2C}$$
 
-### Coaxial
+#### Coaxial
 
 $$E = \frac{Q}{2\pi\varepsilon L} ln\frac{b}{a}$$
 
 $$C = \frac{2\pi \varepsilon L}{ln\frac{b}{a}}$$
 
-### Spherical
+#### Spherical
 $$C = \frac{4\pi\varepsilon}{\frac{1}{a} - \frac{1}{b}}$$
 
-### Configurations
-#### Parallel
+#### Configurations
+##### Parallel
 $$C = C_1 + C_2$$
 
-#### Series
+##### Series
 $$\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2}$$
 

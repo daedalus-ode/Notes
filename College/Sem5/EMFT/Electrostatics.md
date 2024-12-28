@@ -1,12 +1,13 @@
-# Table of contents
+# Electrostatics
+## Table of contents
 - [Intro](#intro)
 	- [Coulomb's law](#coulomb's-law)
 	- [Geometric Systems](#geometric-systems)
 	- [Coulombs (again but with vectors)](#coulombs-(again-but-with-vectors))
-# Intro 
+## Intro 
 - Any effect (ex. gravitational, coulomb etc.)  $\alpha \, \frac{1}{d^2}$ 
 	- Reason - we can simplify any force/effect to a point charge which has a spherical region of effect.
-## Coulomb's law
+### Coulomb's law
 The law describes a relation of electromagnetic force with the following factors - 
 - Shortest distance between charges - $F\  \alpha\ \frac{1}{d^2}$
 - The value of the charges itself
@@ -17,7 +18,7 @@ The law describes a relation of electromagnetic force with the following factors
 > **Note :-**
 >$\varepsilon_o = 8.854 \times 10^{-12} \frac{F}{m}$
 
-## Geometric Systems
+### Geometric Systems
 - Cartesian
 	- Consists of x, y, z co-ordinates
 - Cylindrical
@@ -27,26 +28,20 @@ The law describes a relation of electromagnetic force with the following factors
 	- from the origin and the angles $\theta$ and $\phi$ 
 >[!Extra]
 >Refer more about coordinate system [here](<./Coordinate System.md>)
-## Coulombs (again but with vectors)
+### Coulombs (again but with vectors)
 ![diagram](<../Assets/Coulumbs_law.png>)
 $$|\overline{F_{12}}| \Rightarrow \frac{Q_1Q_2}{4\pi\varepsilon_o|\overline{r_{12}}|^2} \  ; \  F_{12} = |\overline{F12}|\hat{r_{12}}$$
 $$\hat{r_{12}} = \frac{|r_{12}|}{|\overline{r_{12}}|}$$
 $$F_{12} = \frac{Q_1 Q_2 \  \overline{r_{12}}}{4\pi\varepsilon_o |r_{12}|^3}$$
-### Superposition (1 force doesn't know/care abt the other)
+#### Superposition (1 force doesn't know/care abt the other)
 ![Superposition](../Assets/Superposition.png)
 $$\overline{F} = \frac{1}{4\pi\epsilon_o} (
 \frac{QQ_1 (\overline{r} - \overline{r_1})}{|\overline{r} - \overline{r_1}|^3} + 
 \frac{QQ_2 (\overline{r} - \overline{r_2})}{|\overline{r} - \overline{r_1}|^3} + 
 \frac{QQ_2 (\overline{r} - \overline{r_3})}{|\overline{r} - \overline{r_1}|^3} + \cdots)$$
 
-## Electric Fields and Intensity
+### Electric Fields and Intensity
 - In the direction of the force applied
 - SI Unit :- $E = \frac{Volts}{meter}\ (or)\ \frac{V}{m}$
 - Formula :- $$\overline{E} = \frac{\overline{F}}{q}\ =\ \frac{Q\hat{r}}{4\pi\varepsilon_o|r|^2}$$
 
-# Electric field for different geometries
-## Point charge
-## Line
-## Ring
-## Disk
-# Gauss Law
