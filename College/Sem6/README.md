@@ -2,9 +2,9 @@
 
 ## Subjects
 ### Core
-- [High Performance Computing](./high-performance-computing.md)
-- [Machine Learning](./machine-learning.md)
-- [Waveguides](./waveguides.md)
+- [High Performance Computing](./HPC/README.md)
+- [Machine Learning](./ML/README.md)
+- [Waveguides](./Waveguides/README.md)
 ### Electives
-- [Cryptography](./cryptography.md)
-- [Testing](./testing.md)
+- [Cryptography](./Crypto/README.md)
+- [Testing](./Testing/README.md)
