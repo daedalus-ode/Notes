@@ -7,11 +7,11 @@
 - Supervised
 - Unsupervised
 - Reinforcement
-  - Parts of the model
-    - Action
-    - Agent
-    - Reward
-    - Environment
+	- Parts of the model
+		- Action
+		- Agent
+		- Reward
+		- Environment
 - Deep
 
 ### Based on Output
@@ -37,9 +37,9 @@
 > To find the minimum L, L should be a convex function of `c` and `m`
 
 ##### Mean Squared Error (MSE) / Quadratic Loss / L2 Loss
-  - $L = \frac{1}{N}  \sum{{(y_i - X_i)}^2}$
+- $L = \frac{1}{N}  \sum{{(y_i - X_i)}^2}$
 ##### Mean Absolute Error (MAE) / L1 Loss
-  - $L = \frac{1}{N} \sum{|y_i - X_i|}$
+- $L = \frac{1}{N} \sum{|y_i - X_i|}$
 ##### Huber Loss / Smooth Mean Absolute Error
 ##### Log-Cosh Loss
 ##### Quantile Loss
@@ -51,11 +51,25 @@
 
 ###### Confusion Matrix
 - Fields:
-  - False positive
-  - False negative
-  - True positive
-  - True negative
+	- False positive
+	- False negative
+	- True positive
+	- True negative
+- Formulae:
+	- $precision = \frac{tp}{p'}$
+	- $recall = \frac{tp}{p}$
+	- $fp-rate =$
+	- $tp-rate =$
+- Application - [Hypothesis Testing](#hypothesis-testing)
 <!-- TODO: Embed pictures and examples-->
+
+> [!NOTE]
+> ###### ROC (Reciever Operator Characteristics) Curve
+> - Plot of tp-rate vs fp-rate
+> - It can never fall below the 45 degree straight line
+> - `AUC` - Area Under Curve
+> 	- Indicates the performance of the classifier
+> 	- Better `AUC` - Better Performance
 
 ##### Hinge Loss
 
@@ -78,3 +92,18 @@
 - Training (60% of total dataset) - 
 - Validation (20% of total dataset) - 
 - Testing (20% of total dataset) - 
+
+## Confidence Interval
+
+## Hypothesis Testing
+### Types of Hypothesis
+- Null Hypothesis
+- Alternate Hypothesis
+
+### Outcomes
+- Reject null hypothesis
+- Fail to reject null hypothesis
+- Type I error
+- Type II error
+
+## Gradient Descent

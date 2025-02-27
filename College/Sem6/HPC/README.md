@@ -1,5 +1,6 @@
 # High Performance Computing
 - [Fundamentals of Quantitative Design and Analysis](fundamentals-of-quantitative-design-and-analysis.md)
+- [Advanced Optimizations]()
 
 ## Notes
 
