@@ -44,17 +44,13 @@
 ## Dependance
 
 ### Data
-
 #### Register
-
 - Easy to detect
 
 #### Memory
-
 - Hard to detect
 
 ### Name
-
 - Two instructions use the same register or memory location
 - There is no flow of data between the instructions associated with that name
 - Types
@@ -69,13 +65,10 @@
 ### Types
 
 #### RAW
-
 - Gets old value after instruction contention
 
 #### WAW
-
 - Overwrites value through wrong ordering of execution
 
 #### WAR
-
 - Gets new value after instruction contention
