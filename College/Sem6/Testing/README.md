@@ -1,10 +1,9 @@
 # Testing
-
 ## Notes
-1. Intro to Testing and ATPG
-2. Combinational Sequential ATPG and Delay test
-3. DFT - Logic Built - In Self test and Memory Testing
-4. Low Power Test- Test compression and Boundary Scanning
+1. Intro to Testing and ATPG - [markdown](./u1.md) [pdf](./u1.pdf)
+2. Combinational Sequential ATPG and Delay test - [markdown](./u2.md) [pdf](./u2.pdf)
+3. DFT - Logic Built - In Self test and Memory Testing - [markdown](./u3.md) [pdf](./u3.pdf)
+4. Low Power Test- Test compression and Boundary Scanning - [markdown](./u4.md) [pdf](./u4.pdf)
 
 ## Info
 - Textbook:- 
@@ -13,3 +12,10 @@
 - Tool
   - Modus (Cadence)
   - Tessent (Mentor Graphics)
+
+## Todo
+- Unit 1
+  - [ ] Fault Dominance Examples - Slide 63
+  - [ ] Symbolic - Boolean Difference - Slide 218
+- Unit 3
+  - [ ] LOS, LOC - DFT - Slide 45
